@@ -4,7 +4,8 @@
  @Author: 贤心
  @Date: 2014-06-25
  @Site：http://www.sucaijiayuan.com
- 
+ 彭玉成
+ 2017-2-13日进行修复  改为选择日期时控件不隐藏。只要点击ok的时候，以及点击document和其它的input时  日历才好隐藏和变幻位置
  */
 
 ;
@@ -136,7 +137,7 @@
                         if(h.tds[i].className == h[2]){
                             h.tds[i].className = "";
                         }
-                    }
+                    };
                     c.addClass(this,h[2]);
                     c.hasClass(this, h[1]) || (c.stopmp(a),c.creation([0 | this.getAttribute("y"), 0 | this.getAttribute("m"), 0 | this.getAttribute("d")]))
                 }) 

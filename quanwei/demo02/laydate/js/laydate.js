@@ -132,15 +132,20 @@
         c.addClass(d.body, "laydate_body"), h.tds = b("#laydate_table td"), h.mms = b("#laydate_ms span"), h.year = b("#laydate_y"), h.month = b("#laydate_m"), c.each(b(e.box + " .laydate_ym"), function(a, b) { c.on(b, "click", function(b) { c.stopmp(b).reshow(), c.addClass(this[g]("div")[0], "laydate_show"), a || (e.YY = parseInt(h.year.value), c.viewYears(e.YY)) }) }), c.on(b(e.box), "click", function() { c.reshow() }), e.tabYear = function(a) { 0 === a ? c.ymd[0]-- : 1 === a ? c.ymd[0]++ : 2 === a ? e.YY -= 14 : e.YY += 14, 2 > a ? (c.viewDate(c.ymd[0], c.ymd[1], c.ymd[2]), c.reshow()) : c.viewYears(e.YY) }, c.each(b("#laydate_YY .laydate_tab"), function(a, b) { c.on(b, "click", function(b) { c.stopmp(b), e.tabYear(a) }) }), e.tabMonth = function(a) { a ? (c.ymd[1]++, 12 === c.ymd[1] && (c.ymd[0]++, c.ymd[1] = 0)) : (c.ymd[1]--, -1 === c.ymd[1] && (c.ymd[0]--, c.ymd[1] = 11)), c.viewDate(c.ymd[0], c.ymd[1], c.ymd[2]) }, c.each(b("#laydate_MM .laydate_tab"), function(a, b) { c.on(b, "click", function(b) { c.stopmp(b).reshow(), e.tabMonth(a) }) }), c.each(b("#laydate_ms span"), function(a, b) { c.on(b, "click", function(a) { c.stopmp(a).reshow(), c.hasClass(this, h[1]) || c.viewDate(c.ymd[0], 0 | this.getAttribute("m"), c.ymd[2]) }) }),
         c.each(b("#laydate_table td"), function(a, b) {
                 c.on(b, "click", function(a) {
-                        c.addClass(this,h[2]);
-                // c.hasClass(this, h[1]) || (c.stopmp(a),c.creation([0 | this.getAttribute("y"), 0 | this.getAttribute("m"), 0 | this.getAttribute("d")]))
+                    for( var i=0; i<h.tds.length; i++){
+                        if(h.tds[i].className == h[2]){
+                            h.tds[i].className = "";
+                        }
+                    }
+                    c.addClass(this,h[2]);
+                    c.hasClass(this, h[1]) || (c.stopmp(a),c.creation([0 | this.getAttribute("y"), 0 | this.getAttribute("m"), 0 | this.getAttribute("d")]))
                 }) 
         }),
                      h.oclear = b("#laydate_clear"), c.on(h.oclear, "click", function() { c.elem[h.elemv] = "", c.close() }), h.otoday = b("#laydate_today"), c.on(h.otoday, "click", function() { c.elem[h.elemv] = laydate.now(0, c.options.format), c.close() }), 
-        h.ok = b("#laydate_ok"),
+        h.ok = b("#laydate_ok"),parent =document.getElementById("laydate_table") ,hCilck = parent.getElementsByClassName("laydate_click"),
         c.on(h.ok, "click", function() {
                     c.valid && c.creation([c.ymd[0], c.ymd[1] + 1, c.ymd[2]]);
-                    c.hasClass(h.tds, h[1]) || (c.creation([0 | this.getAttribute("y"), 0 | aclick.getAttribute("m"), 0 | aclick.getAttribute("d")]))
+                    c.creation([0 | hCilck[0].getAttribute("y"), 0 | hCilck[0].getAttribute("m"), 0 | hCilck[0].getAttribute("d")]);
                     c.close();
         }),
          e.times = b("#laydate_time"), c.hmsin = e.hmsin = b("#laydate_hms input"), e.hmss = ["Hours", "Minutes", "Seconds"], e.hmsarr = [], c.msg = function(a, d) {

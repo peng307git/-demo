@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src = "laydate/js/laydate.js"></script>
+</head>
+<body>
+
+<input id="begin_time" style="width:125px;" class="laydate-icon" onclick="laydate({elem:'#begin_time',istime: true, format: 'YYYY-MM-DD hh:mm:ss'})"> －
+<input id="end_time" style="width:125px;" class="laydate-icon" onclick="laydate({elem:'#end_time',istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
+
+    <script type="text/javascript">
+        ! function() {
+            laydate.skin('danlan'); //切换时间控件皮肤
+        }();
+    </script>
+</body>
+</html>

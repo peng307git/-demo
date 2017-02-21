@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="../jquery-3.1.1.js"></script>
+    <style type="text/css">
+        #btn{
+            opacity:0;
+            height: 80px;
+            width: 80px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 9;
+        }
+        #div1{
+            width: 100%;
+            height: 1000px;
+            border: 1px solid black;
+            padding: 10px; 
+        }
+        #div1 div{
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            display: inline-block;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .moren{
+            border: 1px dashed #000; 
+        }
+    </style>
+</head>
+<body>
+<img src="../static/images/close-modal-1.png">
+    <input id="btn" multiple="multiple" type="file">
+    <div id="div1">
+        <div class="moren"><input id="btn" multiple="multiple" type="file"></div>
+        <div class="moren"></div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        $("#btn").change(function(){
+            var name = "";
+            var list = this.files
+            for (var i = 0; i <list.length; i++) {
+                 // name +=  "<img class='sub-img' src='../static/images/"+list[i].name+"'/>";
+                name += "<div class='sub-img'></div>";
+
+            }
+            $("#div1").html(name);
+            for (var i = 0; i <list.length; i++) {
+                $("#div1").find('div').eq(i).css("background-image","url('../static/images/"+list[i].name+"')")
+            }
+        })
+    </script>
+</body>
+</html>

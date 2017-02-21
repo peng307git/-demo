@@ -5,24 +5,95 @@
     <title>Document</title>
     <script type="text/javascript" src="../jquery-3.1.1.js"></script>
     <style type="text/css">
-        .wrap{
+        .text-main{
              width: 1022px;
             height: 252px;
             margin: 0 auto;
-            background: url(../images/fundNotice/text-bg.png) no-repeat;
+            background: url(../static/images/text-bg.png) no-repeat;
             background-size: contain;
             padding: 24px;
             position: relative;   
         }
-        .text{
-            width: 
+        .text-main .text-imit{
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            font-size: 12px;
+            color: #A88166;
+        }
+        textarea{
+            width: 1027px;
+            height: 236px;
+            border:none;
+            outline:none;
+            resize:none;
+            background: #FCF7F0;
+        }
+        .text-hide{
+            display: none;
+        }
+        #imgPreview{
+            width:120px; height:100px;margin-left: 280px;
+            border: 1px solid red;
         }
     </style>
 </head>
 <body>
-<div class="wrap">
-    <textarea class="text" ></textarea>
-</div>
-    
+                <div class="text-main">
+                    <textarea id="sun-text" placeholder="写下您a对未来的期许"></textarea>
+                    <div class="text-imit text-show">您最多可输入1000字</div>
+                    <div class="text-imit text-hide">您还可以输入<span class="text-num">xxx</span>字</div>
+                </div>
+                <input type="button" name="" class="btn" value="点击">
+                <input type="file" name="file" style="width: 200px; height: 20px;" onchange="PreviewImage(this)" id="upload" />
+                <div id="imgPreview"></div>
+    <script type="text/javascript">
+        
+            $(".btn").on('click',function(){
+                var text = html_encode($("#sun-text").val());
+                console.log(text);
+            })
+
+        //字符串转义
+ function html_encode(str){   
+          var s = "";   
+          if (str.length == 0) return "";   
+          s = str.replace(/&/g, "&gt;");   
+          s = s.replace(/</g, "&lt;");   
+          s = s.replace(/>/g, "&gt;");   
+          s = s.replace(/ /g, "&nbsp;");   
+          s = s.replace(/\'/g, "&#39;");   
+          s = s.replace(/\"/g, "&quot;"); 
+          return s;   
+}
+function PreviewImage(imgFile){
+            var filextension=imgFile.value.substring(imgFile.value.lastIndexOf("."),imgFile.value.length);
+            filextension=filextension.toLowerCase();
+            if ((filextension!='.jpg')&&(filextension!='.gif')&&(filextension!='.jpeg')&&(filextension!='.png')&&(filextension!='.bmp'))
+            {
+            alert("对不起，系统仅支持标准格式的照片，请您调整格式后重新上传，谢谢 !");
+            imgFile.focus();
+            }
+            else
+            {
+            var path;
+
+            if(document.all)//IE
+            {
+            imgFile.select();
+            path = document.selection.createRange().text;
+          
+            document.getElementById("imgPreview").innerHTML="";
+            document.getElementById("imgPreview").style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',sizingMethod='scale',src=\"" + path + "\")";//使用滤镜效果 
+            }
+            else//FF
+            {
+            path = imgFile.files[0].getAsDataURL();
+            document.getElementById("imgPreview").innerHTML = "<img id='img1' width='120px' height='100px' src='"+path+"'/>";
+            // document.getElementById("img1").src = path;
+            }
+            }
+}
+    </script>
 </body>
 </html>

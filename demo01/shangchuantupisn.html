@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>图片上传</title>
     <script type="text/javascript" src="../jquery-3.1.1.js"></script>
     <style type="text/css">
         .btn{
@@ -44,9 +44,6 @@
     </style>
 </head>
 <body>
-        <form action="" method="post" id="opForm" enctype="multipart/form-data">
-            <input id="pic" type="file" name="pic" />
-        </form>
     <div id="div1">
         <div class="moren"><input class="btn" type="file"></div>
         <div class="moren"><input class="btn" type="file"></div>
@@ -54,15 +51,14 @@
     </div>
     
 
-<script type="text/javascript">
-            $(".moren").on("change",".btn",function(){
+    <script type="text/javascript">
+        $(".moren").on("change",".btn",function(){
             var myIndex = $(this).parent().index();
             var list = this.files;
             var $index = $("#div1").find('div').eq(myIndex);
             var typename = list[0].type.substring('6');
             if( typename == "png" || typename == "jpg" || typename == "jpeg" ){
                 $index.css("background","");
-                console.log($(this).val())
                 $index.css("background-image","url('../static/images/"+list[0].name+"')");
                 $index.find('input').remove();
                 $index.append('<img class="removeclass" src="../static/images/remove-img.png">');
@@ -76,6 +72,6 @@
                 $index.find('img').remove();
                 $index.append('<input class="btn" type="file">');
         })
-</script>
+    </script>
 </body>
 </html>

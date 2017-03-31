@@ -1,0 +1,30 @@
+.reports_list li{
+    width: 100%;
+    padding: 15px 0;
+}
+.reports_list li span{
+    float: right;
+}
+.reports_list li a{
+    display: inline-block;
+    max-width: 80%;
+    font-size: 16px;
+    color: #4E4F51 ;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.reports_list li a:hover{
+    text-decoration: none;
+    color: rgba(14,139,236,1);
+}
+.reports_list li i{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 5px;
+    border-radius: 50%;
+}
+.reports_list li i.ren_con{
+    background: #E46161;
+}

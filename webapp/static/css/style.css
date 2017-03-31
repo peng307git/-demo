@@ -1,0 +1,67 @@
+/* Custom Stylesheet */
+body, html {
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+      background: #f4eedf;
+      text-align: center;
+      height: 100%;
+}
+
+body .header{
+  color: #34495e;
+}
+
+.container {
+  float: left;
+  width: 100%;
+}
+
+
+
+
+  
+/* ALL DEMO */
+
+.pointer {
+  color: #34495e;
+  font-family: 'Pacifico', cursive;
+  font-size: 22px;
+  margin-top: -15px;
+}
+.wheel {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width:107px; /* this will determine the diameter of the circle  */
+  height:107px; /* this will determine the diameter of the circle  */
+  visibility: hidden;
+  position: relative;
+  display: none;
+}
+
+.wheel li {
+  overflow: hidden;
+  float:left;
+}
+
+.wheel li a, .wheel li a:visited{
+  display: block;
+  background:#fff;
+  border-radius: 50%;
+  padding:0px;
+  text-align: center;
+  width:38px;
+  height:38px;
+  color: white;
+  -moz-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+    .wheel li a img {  width:38px;
+  height:38px;
+    }
+.wheel li a:hover{
+  background: rgba(0,0,0,0.8);
+}

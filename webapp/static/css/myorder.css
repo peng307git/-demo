@@ -1,0 +1,363 @@
+@CHARSET "UTF-8";
+.blue,a.blue{ color: #0D8BED ; text-decoration: none;}
+.gray{color: #999;}
+button.graybtn{background: #999; cursor: auto;}
+/*need-verification*/
+.deal-page-content .m-wrap{
+	min-height:650px; 
+    padding-top: 10px;
+}
+/**/
+.order-box{
+    background: #FFF;
+    padding-bottom: 20px;
+}
+/*way-tab 订单类型 teb*/
+.way-tab{
+    padding: 10px 20px;
+}
+.way-tab span{
+    display: inline-block;
+    height: 34px;
+    padding: 0 18px;
+    margin-right: 15px;
+    font-size: 16px;
+    line-height: 34px;
+    color: #0E8BEC;
+    border-radius: 18px;
+    cursor: pointer;
+}
+.way-tab span.active{
+    color: #FFF;
+    background: #0E8BEC;
+}
+/*status-tab 状态 tab*/
+.status-tab{
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    background: #F4F4F4;
+    color: #1B2A4B;
+}
+.status-tab span{
+    margin: 0 25px;
+    cursor: pointer;
+}
+.status-tab span.active{
+    color: #0E8BEC;
+}
+/*order-list*/
+#order-list h3{
+    font-size: 16px;
+    padding: 15px;
+    text-align: center;
+}
+.order-list{
+    padding: 17px;
+}
+.order{
+    border: 1px solid #D5D5D5;
+    margin-top: 20px;
+}
+.order-list .order:first-child{
+    margin-top: 0;
+}
+.order-top{
+    font-size: 14px;
+    line-height: 28px;
+    padding: 9px;
+    background: #F4F4F4;
+}
+.order-top span{
+    float: right;
+    min-width: 60px;
+    height: 28px;
+    margin: 0 10px;
+}
+.order-top .check-expressage a{
+    text-decoration: none;
+    color: #0E8BEC;
+}
+.order-top .check-expressage a:hover{
+    text-decoration: underline;
+}
+.order-top .line{
+    margin: 0 15px;
+    border-right: #333 solid 1px;
+}
+.order-top .status i{
+    display: inline-block;
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin: 7px;
+    background: url("../images/order-icon.png") no-repeat 50% 0;
+}
+.order-top .wait i{
+    background-position: 50% 0;
+}
+.order-top .delivery i{
+    background-position: 50% -16px;
+}
+.order-top .complete i{
+    background-position: 50% -31px;
+}
+.order-section{
+    padding:0 8px;
+}
+.order-section img{
+    float: left;
+    width: 80px;
+    height: 80px;
+    padding: 20px 8px;
+}
+.order-section .order-content{
+    float: left;
+    position: relative;
+    width: 140px;
+    height: 80px;
+    padding: 20px 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-right: #EEE solid 1px;
+}
+.order-section .order-content p{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.order-section .order-content em{
+    position: absolute;
+    bottom: 20px;
+    font-size: 12px;
+    color: #999;
+}
+.order-section .order-info,.order-section .order-amount{
+    float: left;
+    font-size: 14px;
+    border-right: #EEE solid 1px;
+}
+.order-section .order-info{
+    position: relative;
+    width: 300px;
+    height: 80px;
+    padding: 20px 8px;
+    font-size: 13px;
+    line-height: 1.5;
+    overflow-x:hidden;
+    overflow-y: auto;
+    color: #999;
+}
+.order-section .order-info button{
+    position: absolute;
+    top:20px;
+    right: 10px;
+    height: 16px;
+    line-height: 16px;
+    padding: 3px 0 0 20px;
+    color: #888;
+    border:none;
+    background: url("../images/myorder/icon_edit.png") no-repeat left ;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+.order-section .order-info:hover button{
+    display: block;
+}
+.order-section .order-info button:hover{
+    background: url("../images/myorder/icon_edit_select.png") no-repeat left ;
+    color: #008EEF;
+}
+.order-section .order-info em{
+    position: absolute;
+    top:20px;
+    right: 10px;
+    height: 16px;
+    line-height: 16px;
+    padding: 3px 0 0 20px;
+    color: #53BE01;
+}
+.order-section .order-info em:before{
+    display: block;
+    float: left;
+    content: "√";
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    border-radius: 8px;
+    background: #53BE01;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+}
+.order-section .order-info span{
+    float: right;
+    width: 220px;
+    color: #333;
+}
+.order-section .order-amount{
+    width: 120px;
+    height: 30px;
+    padding: 45px 7px;
+    text-align: center;
+}
+.order-section .order-amount span{
+    color: #999;
+}
+.order-section .order-operation{
+    float: right;
+    padding: 22px 10px;
+    margin: 20px 0;
+}
+.order-operation button{
+    display: block;
+    min-width: 88px;
+    height: 34px;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 34px;
+    border: none;
+    cursor: pointer;
+}
+.order-operation button.receipt{
+    background: #0D8BEC;
+    color: #FFF;
+}
+.order-operation button.receipt:hover{
+    background: #29A2FF;
+}
+.order-operation button.delete{
+    border: 1px solid #DCDCDC;
+    background: #FFF;
+    color: #666;
+}
+.order-operation button.delete:hover{
+    border: 1px solid #0D8BEC;
+    color: #0D8BEC;
+}
+#alertWrap .alert-text{
+    display: block;
+    padding: 10px 0;
+}
+#alertWrap .logistics_info{
+    width: 100%;
+    margin: 0 auto;
+    min-height: 400px;
+}
+#alertWrap .logistics_info div{
+    padding: 10px 20px 5px;
+    border-bottom: #D8D8D8 solid 1px;
+    text-align: left;
+}
+.logistics_info div em{
+    display: block;
+    font-size: 12px;
+    color: #666;
+}
+#alertWrap .logistics_info h3{
+    padding-top: 50px;
+}
+#alertWrap .logistics_info p{
+    text-align: left;
+    font-size: 14px;
+    padding: 20px;
+}
+#alertWrap .logistics_info ul{padding-left: 50px;}
+#alertWrap .logistics_info li{
+    position: relative;
+    margin: 10px 0;
+    text-align: left;
+    color: #999
+}
+#alertWrap .logistics_info li:first-child{
+    color: #333;
+}
+#alertWrap .logistics_info li:before{
+    position:absolute;
+    left: -30px;
+    top:0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #D8D8D8;
+    border: #F6F6F6 solid 5px;
+    border-radius: 50%;
+    content: " ";
+}
+#alertWrap .logistics_info li:first-child:before{
+    background: #1894EF;
+    border: #CDE9FB solid 5px;
+}
+#alertWrap .logistics_info li:after{
+    position:absolute;
+    left: -20px;
+    top:-10px;
+    display: block;
+    width: 1px;
+    height: 10px;
+    background: #D8D8D8;
+    content: " ";
+}
+#alertWrap .logistics_info li:first-child:after{
+    display: none;
+}
+#changeAddressBox{
+    padding: 10px 0;
+}
+#changeAddressBox ul li{
+    height: 50px;
+    text-align: left;
+    padding: 5px 10px;
+    padding-left: 0;
+    background: #FFF;
+}
+#changeAddressBox li em{
+    float: right;
+    margin-top: 12px;
+    cursor: pointer;
+    color: #0e8bec;
+}
+#changeAddressBox li .edit{
+    display: none;
+}
+#changeAddressBox li:hover .edit{
+    display: block;
+}
+#changeAddressBox li div{
+    float: left;
+    width: 290px;
+}
+#changeAddressBox .address-list{
+    height: 220px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-top: #EEE solid 20px;
+    border-bottom: #EEE solid 2px;
+}
+#changeAddressBox .address-list li:hover{
+    background: #F4F4F4;
+}
+#changeAddressBox .address-list li{
+    border-top: #EEE solid 1px;
+}
+#changeAddressBox  li i{
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin: 15px;
+    background: url("../images/myorder/icon_add.png") no-repeat 50% 0;
+}
+#changeAddressBox .address-list li i{
+    background: url("../images/myorder/icon_select.png") no-repeat 50% 0;
+}
+#changeAddressBox .address-list li.active i{
+    background: url("../images/myorder/icon_select02.png") no-repeat 50% 0;
+}
+#changeAddressBox  li .alert-address{
+    color: #999;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}

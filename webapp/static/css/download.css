@@ -1,0 +1,161 @@
+@CHARSET "UTF-8";
+.donwloadwarp section {
+	position: relative;
+	width: 100%; 
+	height: 100%;
+	color: #FFF;
+}
+.donwloadwarp section:nth-child(1){
+	background:url("../images/download/download_bg_1.jpg") no-repeat;
+	background-size: cover;
+}
+.donwloadwarp section:nth-child(2){
+	background:url("../images/download/download_bg_2.jpg") no-repeat;
+	background-size: cover;
+}
+.donwloadwarp section:nth-child(3){
+	background:url("../images/download/download_bg_3.jpg") no-repeat;
+	background-size: cover;
+}
+.donwloadwarp section:nth-child(1) h1{
+	position: absolute;
+	top:30%;
+	width: 100%;
+	font-size: 50px;
+	font-weight: lighter;
+	text-align: center;
+}
+.donwloadwarp section:nth-child(1) p{
+	position: absolute;
+	top:40%;
+	width: 100%;
+	font-size: 20px;
+	font-weight: lighter;
+	text-align: center;
+}
+.donwloadwarp section:nth-child(1) div{
+	position: absolute;
+	top:50%;
+	width: 100%;
+	font-size: 20px;
+	font-weight: lighter;
+	text-align: center;
+}
+.donwloadwarp section:nth-child(1) a{
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 0 15px;
+	background: rgba(150,150,150,0.4);
+	color: #FFF;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 28px; 
+}
+.donwloadwarp section:nth-child(1) i{
+	float: left;
+	width: 28px;
+	height: 28px;
+	margin-right: 10px;
+	background:url("../images/download/download_icon.png") no-repeat;
+}
+.donwloadwarp section:nth-child(1) .mac i{
+	background-position: 0 0;
+}
+.donwloadwarp section:nth-child(1) .win i{
+	background-position: 0px -33px;
+}
+.donwloadwarp section:nth-child(1) footer{
+	position: absolute;
+	bottom:30%;
+	width: 100%;
+	text-align: center;
+}
+.donwloadwarp .appsbox{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 460px; 
+	height: 360px;
+	margin-left: 60px;
+	margin-top: -180px;
+	color: #05073b;
+}
+.donwloadwarp .appsbox h1{
+	margin-bottom: 60px;
+	font-size: 30px;
+}
+.appsbox h1 i{
+	display: block;
+	width: 65px; 
+	height: 5px;
+	border-bottom: solid 1px #05073b; 
+}
+.donwloadwarp .appsbox .app{
+	float: left;
+	width: 175px;
+	text-align: center;
+}
+.donwloadwarp .appsbox .app img{
+	margin: 0 auto;
+	background: rgba(255,255,255,.5);
+	margin-bottom: 20px;
+}
+.donwloadwarp .appsbox .iphone{
+	margin-right: 80px;
+}
+.donwloadwarp .app a{
+	display: block;
+	height: 28px;
+	padding:5px 10px;
+	border: solid 1px #05073b;
+	border-radius: 5px;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 28px;
+	text-align: left;
+}	
+.app a i{
+	float: left;
+	width: 28px;
+	height: 28px;
+	margin-right: 10px;
+	background:url("../images/download/download_icon.png") no-repeat;
+}
+.iphone a i{
+	background-position: -23px 0;
+}
+.android a i{
+	background-position: -24px -32px;
+}
+.donwloadwarp .instructions{
+	position: absolute;
+	left:50%;
+	bottom: 50px;
+	margin-left: 400px;
+	color: #666;
+}
+.donwloadwarp .mindlink h1{
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	width: 600px;
+	margin-left: -300px;
+	font-size: 30px;
+	text-align: center;
+}
+.mindlink h1 i{
+	display: block;
+	width: 80px; 
+	height: 10px;
+	margin: 0 auto;
+	border-bottom: solid 1px #FFF; 
+}
+.donwloadwarp .videobox{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	width: 650px;
+	height: 410px;
+	margin-left:-325px; 
+	margin-top: -205px; 
+}

@@ -1,0 +1,98 @@
+.reports_box{
+    padding-bottom: 25px;
+    min-height: 600px;
+}
+.reports_box .title{
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px 0;
+}
+.reports_box .title a,.reports_box .title a:visited{
+    display: inline-block;
+    padding:10px 5px 15px 0;
+    margin-right: 15px;
+    cursor: pointer;
+    color: #4E4F51;
+}
+.reports_box .title a .iconfont{
+    padding-right:5px;
+    font-size: 20px;
+}
+.reports_box .title a.active ,.reports_box .title a:hover{
+    color: #238BF6;
+    text-decoration: none;
+}
+.reports_box .title a.active {
+    border-bottom: #238BF6 solid 2px;
+}
+.reports_box aside{
+    float: right;
+    width: 364px;
+}
+.reports_box aside h3{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #4E4F51;
+    margin-bottom:15px;
+    padding-left: 10px;
+    border-left: #238BF6 solid 2px;
+}
+.reports_box aside li {
+    padding: 7px 0;
+}
+.reports_box aside li a{
+    display: block;
+    margin-bottom: 5px;
+    color: #4E4F51 ;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.reports_box aside li a:hover{
+    color: #238BF6;
+    text-decoration: none;
+}
+.reports_box aside li span{
+    color: #9A9CA4 ;
+    font-size: 12px;
+}
+/*info*/
+.info_top{
+    height: 20px;
+}
+.reports_info header{
+    padding-bottom: 5px;
+    border-bottom: #E6E6E6 solid 1px;
+}
+.reports_info header h2{
+    font-size: 30px;
+    color: #4E4F51;
+    margin-bottom: 20px;
+}
+.reports_info header .info{
+    color: #9A9CA4;
+    font-size: 12px;
+    text-align: right;
+}
+.reports_info .info span{
+    padding-right: 15px;
+}
+.reports_info article{
+    padding: 20px 0;
+    line-height: 28px;
+}
+.reports_info article p{
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 26px;
+}
+.reports_info article img{
+    display: block;
+    margin: 0 auto;
+    width: 700px;
+    max-width: 700px;
+}
+.page_box{
+    width: 100%;
+}

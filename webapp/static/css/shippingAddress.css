@@ -1,0 +1,155 @@
+.addressflip{
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top:0;
+    left: 0;
+}
+.addressflip .btn {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    background-color: #008cf4;
+    border: none;
+    margin-top: 36px;
+    cursor: pointer;
+}
+.addressflip .bgblack{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.addressflip .countmain{
+    z-index: 100;
+    width: auto;
+    height: auto;
+    background: #fff;
+    position:absolute;
+    display: block;
+    left: 50%;
+    top: 120%;
+    transform: translate(-50%,-50%);
+    border-radius: 6px;
+    overflow: hidden;
+}
+.addressflip .countmain h2{
+    width: 100%;
+    height:34px;
+    line-height: 34px;
+    text-align: center;
+    background: #242f38;
+    color: #dfe0e1;
+    font-size: 14px;
+}
+.addressflip .countnone{
+    float: right;
+    position: relative;
+    right: 10px;
+    cursor: pointer;
+}
+.addressflip .countbody{
+    width: 580px;
+    float: right;
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    padding: 20px 120px;
+    text-align: left;
+}
+.addressflip .countbody .error{
+    display: block;
+    width: 450px;
+    height: 18px;
+    float: left;
+    margin-left: 130px;
+    line-height: 18px;
+    font-size: 12px;
+    color: red;
+}
+.addressflip .countbody li{
+  line-height: 30px;
+  margin-bottom: 6px;
+}
+.addressflip .countbody input,.addressflip #countryCode{
+    height: 30px;
+    border:1px solid #d8dcde;
+    text-indent:  6px;
+}
+.addressflip .countbody input{
+    float: left;
+}
+.addressflip .widthinput{
+  width: 450px;
+}
+.dizhi{
+    width: 120px;
+}
+.chian86{
+    width: 100px;
+}
+#savebtn{
+    display: block;
+    margin:15px auto 0;
+    padding: 0 20px;
+}
+.countryCode{
+    height: 30px;
+    border:1px solid #d8dcde;
+}
+.parent{
+    background: url('http://ourjs.github.io/static/2015/arrow.png') right center no-repeat;
+    width: 126px;
+    height: 30px;
+    border: solid 1px #ccc;
+    display: inline-block;
+}
+.parent select{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    background:none;
+    border:none;
+    padding-left:10px;
+    width: 100%;
+    height:100%;
+}
+.parent{
+    text-indent: 0;
+    margin-right: 10px;
+}
+.posrel{
+    display: inline-block;
+}
+#telphone-type{
+    display: inline-block;
+    height: 32px;
+    background: #fff;
+}
+.textindent{
+    float: left;
+    width: 115px;
+    text-align: right;
+    margin-right: 10px;
+}
+.pasrtli .parent{
+  float: right;
+  position: relative;
+  right: 86px;
+}
+.pasrtli strong{
+    font-weight: normal;
+}
+.inputphone{
+    width: 208px;
+}
+.countryCode{
+  float: left;
+  margin-right: 10px;
+}

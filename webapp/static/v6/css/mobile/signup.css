@@ -1,0 +1,554 @@
+@charset 'utf-8';
+html,body{
+	height: 100%;
+	min-height: 100%;
+}
+.wrap{
+	width: 100%;
+	padding: 0 0.25rem;
+	min-height: 100%;
+	background: url(/static/v6/images/mobile/bg.png) no-repeat;
+	background-size: cover;
+}
+.step0,.step1,.step2{display: none};
+.bd-container{
+	width: 100%;
+}
+.step0 .login-title{
+	margin-top: 0.88rem;
+	font-size: 0.36rem;
+	color: #008FF9;
+	height: 0.5rem;
+	line-height: 0.5rem;
+}
+.step0 .line{
+	height: 0.02rem;
+	width: 0.9rem;
+	background-color: #008FF9;
+}
+
+.step0 .lable-text{
+	font-size: 0.32rem;
+	color: #4E4F51;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	margin-bottom: 0.1rem;
+}
+.step0 .icode{
+	margin-top: 0.63rem;
+}
+.step0 .username{
+	margin-top: 0.05rem;
+}
+
+.step0 .vcode{
+	margin-top: 0.05rem;
+}
+.step0 .invitecodebox input{
+	width: 6rem;
+	height: 0.8rem;
+	outline: none;
+	border:none;
+	padding-left: 0.1rem;
+	background: transparent;
+}
+.icon-invite_code{
+	width: 0.40rem;
+	height: 0.35rem;
+	position: absolute;
+	top:0.2rem;
+	right: 0.2rem;
+	background: url(/static/v6/images/mobile/icon_icode.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.step0 .inputbox{
+	border: solid 0.01rem #BDBDBD;
+	-webkit-border-radius:0.04rem;
+	border-radius: 0.04rem;
+	background-color: #fff;
+	height: 0.8rem;
+	position: relative;
+	vertical-align: middle;
+}
+.step0 .country-code{
+	text-align: center;
+	display: inline-block;
+	box-sizing: border-box;
+	color: #4E4F51;
+	width: 1.36rem;
+	font-size: 0.28rem;
+	z-index: 1;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	margin: 0.2rem 0.12rem 0.2rem 0.22rem;
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	border: none;
+	padding:0;
+	background-color: #fff;
+
+}
+.step0 .icon-down{
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.12rem;
+	line-height: 0.4rem;
+	background: url(/static/v6/images/mobile/icon_down.png) no-repeat;
+	background-size: 100% 100%;
+	margin-left: -0.2rem;
+}
+.step0 .trip{
+	font-size: 0.24rem;
+	height: 0.33rem;
+	line-height: 0.33rem;
+	color: #ff3131;
+}
+.step0 .only-number{
+	padding-left: 0.1rem;
+	width: 4.5rem;
+	outline: none;
+	border:0;
+}
+.step0 .oneline{
+	display: inline-block;
+	width: 0.01rem;
+	height: 0.4rem;
+	background-color: #a9a9a9;
+	margin-bottom: -0.1rem;
+}
+.step0 .icon-phone{
+	width: 0.36rem;
+	height: 0.36rem;
+	position: absolute;
+	top:0.2rem;
+	right: 0.2rem;
+	background: url(/static/v6/images/mobile/icon_phone.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.step0 .signup-vcodebox{
+	height: 0.8rem;
+	width: 100%;
+	position: relative;
+}
+.step0 .signup-vcodebox input{
+	width: 100%;
+	height: 0.8rem;
+	padding-left: 0.1rem;
+	outline: none;
+	border: none;
+}
+.step0 .signup-vcodebox .left{
+	float: left;
+	width: 60%;
+	border: solid 0.01rem #BDBDBD;
+	-webkit-border-radius:0.04rem;
+	border-radius: 0.04rem;
+	background-color: #fff;
+}
+.step0 .signup-vcodebox .right{
+	float: right;
+	width: 35%;
+	text-align: right;
+	background-color: #fff;
+}
+.step0 .signup-vcodebox .right img{
+}
+
+.step0 .signup-msgcodebox{
+	height: 0.8rem;
+	width: 100%;
+	position: relative;
+}
+.step0 .signup-msgcodebox input{
+	width: 100%;
+	height: 0.8rem;
+	padding-left: 0.1rem;
+	outline: none;
+	border: none;
+}
+.step0 .signup-msgcodebox .left{
+	float: left;
+	width: 60%;
+	border: solid 0.01rem #BDBDBD;
+	-webkit-border-radius:0.04rem;
+	border-radius: 0.04rem;
+	background-color: #fff;
+}
+.step0 .signup-msgcodebox .right{
+	vertical-align: middle;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	-webkit-border-radius:0.04rem;
+	border-radius: 0.04rem;
+	background-color: #fff;
+	border:solid 0.01rem #BDBDBD;
+	float: right;
+	width: 35%;
+	color: #4E4F51;
+	font-size: 0.28rem;
+}
+.step0 .signup-msgcodebox .get-vcode{
+	background: none;
+}
+.step0 .btn-login{
+	margin:0 auto;
+	width: 100%;
+	height: 0.9rem;
+	margin-top: 0.3rem;
+
+}
+.step0 .btn-login input{
+	border-radius: 0.04rem;
+	-webkit-border-radius:0.04rem;
+	width: 100%;
+	height: 0.9rem;
+	background-color: #008ff9;
+	size: 0.36rem;
+	outline: none;
+	border: none;
+	color: #fff;
+}
+
+.step0 .alertTrip{
+	margin-top: 0.2rem;
+	width: 100%;
+	height: 0.5rem;
+	text-align: center;
+}
+.step0 .alertTrip span{
+	visibility: hidden;
+	transition: opacity .5s;
+	-webkit-transition:opacity .5s;
+	font-size: 0.28rem;
+	padding: 0.2rem 0.2rem;
+	border-radius: 0.5rem;
+	-webkit-border-radius:0.2rem;
+	background: #000;
+	color: #fff;
+}
+.step0 .no-login-trip{
+	display: block;
+	margin:0 0.25rem;
+	position: absolute;
+	bottom: 0.8rem;
+	text-align: center;
+	font-size: 0.24rem;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform:translateX(-50%);
+}
+.step0 .no-login-trip .zh{
+	color: #666;
+	height: 0.33rem;
+	line-height: 0.33rem;
+}
+.step0 .no-login-trip .now-zc{
+	color: #008ff9;
+	height: 0.33rem;
+	line-height: 0.33rem;
+}
+
+.step0 .how-get{
+	font-size: 0.24rem;
+	color: #666;
+	text-align: center;
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+
+/*第二步*/
+
+
+.step1 .login-title{
+	margin-top: 0.88rem;
+	font-size: 0.36rem;
+	color: #008FF9;
+	height: 0.5rem;
+	line-height: 0.5rem;
+}
+.step1 .line{
+	height: 0.02rem;
+	width: 0.9rem;
+	background-color: #008FF9;
+}
+.step1 .lable-text{
+	font-size: 0.32rem;
+	color: #4E4F51;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	margin-bottom: 0.1rem;
+}
+.step1 .nick{
+	margin-top: 0.63rem;
+}
+.step1 .nicknamebox{
+	height: 0.8rem;
+	width: 100%;
+	position: relative;
+}
+.step1 .nicknamebox input{
+	font-size: 0.28rem;
+	width: 100%;
+	height: 0.8rem;
+	padding-left: 0.1rem;
+	outline: none;
+	border: none;
+	background-color: #fff;
+}
+.step1 .nicknamebox .left{
+	float: left;
+	width: 60%;
+	border: solid 0.01rem #BDBDBD;
+	-webkit-border-radius:0.04rem;
+	border-radius: 0.04rem;
+	background-color: #fff;
+}
+.step1 .nicknamebox .right{
+	border: solid 0.01rem #BDBDBD;
+	-webkit-border-radius:0.04rem;
+	border-radius: 0.04rem;
+	background-color: #fff;
+	height: 0.8rem;
+	float: right;
+	width: 35%;
+	background: url(/static/v6/images/mobile/icon_random.png) no-repeat;
+	background-size: 0.37rem 0.41rem;
+	background-position: center center;
+	background-color: #fff;
+}
+
+.step1 .inputbox{
+	
+	border: solid 0.01rem #BDBDBD;
+	-webkit-border-radius:0.04rem;
+	border-radius: 0.04rem;
+	background-color: #fff;
+	height: 0.8rem;
+	position: relative;
+	vertical-align: middle;
+}
+.step1 .passwordbox input{
+	background: transparent;
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 100%;
+	padding-left: 0.1rem;
+	outline: none;
+	width: 6rem;
+	height: 0.8rem;
+}
+
+.step1 .trip{
+	font-size: 0.24rem;
+	height: 0.33rem;
+	line-height: 0.33rem;
+	color: #ff3131;
+}
+
+.step1 .btn-login{
+	margin:0 auto;
+	width: 100%;
+	height: 0.9rem;
+	margin-top: 0.3rem;
+
+}
+.step1 .btn-login input{
+	border-radius: 0.04rem;
+	-webkit-border-radius:0.04rem;
+	width: 100%;
+	height: 0.9rem;
+	background-color: #008ff9;
+	size: 0.36rem;
+	outline: none;
+	border: none;
+	color: #fff;
+}
+
+.step1 .alertTrip{
+	margin-top: 0.2rem;
+	width: 100%;
+	height: 0.5rem;
+	text-align: center;
+}
+.step1 .alertTrip span{
+	visibility: hidden;
+	transition: opacity .5s;
+	-webkit-transition:opacity .5s;
+	font-size: 0.28rem;
+	padding: 0.2rem 0.2rem;
+	border-radius: 0.5rem;
+	-webkit-border-radius:0.2rem;
+	background: #000;
+	color: #fff;
+}
+
+/*第二步*/
+.step2 .login-title{
+	margin-top: 0.88rem;
+	font-size: 0.36rem;
+	color: #008FF9;
+	height: 0.5rem;
+	line-height: 0.5rem;
+}
+
+.step2 .lable-text{
+	font-size: 0.32rem;
+	color: #4E4F51;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	margin-bottom: 0.1rem;
+}
+.step2 .line{
+	height: 0.02rem;
+	width: 0.9rem;
+	background-color: #008FF9;
+}
+.step2 .password{
+	margin-top: 0.65rem;
+}
+.step2 .inputbox,.emailbox{
+	border: solid 0.01rem #BDBDBD;
+	-webkit-border-radius:0.04rem;
+	border-radius: 0.04rem;
+	background-color: #fff;
+	height: 0.8rem;
+	position: relative;
+	vertical-align: middle;
+}
+.step2 .paypasswordbox input{
+	background: transparent;
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 100%;
+	padding-left: 0.1rem;
+	outline: none;
+	width: 6rem;
+	height: 0.8rem;
+}
+.step2 .emailbox input{
+	background: transparent;
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 100%;
+	padding-left: 0.1rem;
+	outline: none;
+	width: 6rem;
+	height: 0.8rem;
+}
+
+.step2 .trip{
+	font-size: 0.24rem;
+	height: 0.33rem;
+	line-height: 0.33rem;
+	color: #ff3131;
+}
+
+.step2 .btn-login{
+	margin:0 auto;
+	width: 100%;
+	height: 0.9rem;
+	margin-top: 0.3rem;
+
+}
+.step2 .btn-login input{
+	border-radius: 0.04rem;
+	-webkit-border-radius:0.04rem;
+	width: 100%;
+	height: 0.9rem;
+	background-color: #008ff9;
+	size: 0.36rem;
+	outline: none;
+	border: none;
+	color: #fff;
+}
+
+.step2 .alertTrip{
+	margin-top: 0.2rem;
+	width: 100%;
+	height: 0.5rem;
+	text-align: center;
+}
+.step2 .alertTrip span{
+	visibility: hidden;
+	transition: opacity .5s;
+	-webkit-transition:opacity .5s;
+	font-size: 0.28rem;
+	padding: 0.2rem 0.2rem;
+	border-radius: 0.5rem;
+	-webkit-border-radius:0.2rem;
+	background: #000;
+	color: #fff;
+}
+
+
+/*模态弹出层*/
+#alertWrap {
+    position: fixed;
+    width: 60%;
+    z-index: 9999999;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border-radius:2px;
+}
+#alertWrap .alert-bg{
+    width: 100%;
+    height: 0.6rem;
+    background:#262F37;
+    border-top-left-radius: 0.08rem;
+    border-top-right-radius: 0.08rem;
+    font-size:0.28rem;
+    color:#fff;
+    text-align:center;
+    line-height:0.6rem;
+    position: relative;
+}
+#alertWrap .alert-bg .close{
+	position: absolute;
+	right: 0.15rem;
+	top: 0.13rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    font-size: 0.32rem;
+    color: #fff;
+}
+#alertWrap .alert-box{
+    background-color: #fff;
+    padding: 0.4rem 0;
+    border: 1px solid #ddd;
+    border-bottom-left-radius: 0.08rem;
+    border-bottom-right-radius: 0.08rem;
+}
+#alertWrap .alert-text{
+    justify-content: center;
+    align-items: center;
+    min-height:0.1rem;
+    letter-spacing: 1px;
+    padding: 0.2rem 0.8rem;
+    font-size: 0.28rem;
+}
+.btn-default-black{
+    display: inline-block;
+    width:2.5rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    margin: 0.3rem  0.1rem 0 0;
+    color:#fff;
+    font-size: 0.18rem;
+    text-align: center;
+    background-color:#333333;
+    border-radius:0.04rem;
+    border: none;
+    cursor: pointer;
+    padding:0;
+}
+
+
+
+

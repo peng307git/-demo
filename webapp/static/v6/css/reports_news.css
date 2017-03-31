@@ -1,0 +1,53 @@
+.reports_list,.reports_info{
+    float: left;
+    width: 766px;
+}
+.reports_list figure{
+    margin: 0;
+    padding: 15px 0;
+    border-top: #E6E6E6 solid 1px;
+}
+.reports_list figure:first-child{
+    border-top:0;
+}
+.reports_list figure img{
+    float: left;
+    width: 200px;
+    height: 105px;
+    margin-right: 15px;
+}
+.reports_list figcaption a{
+    display: block;
+    margin-bottom:15px;
+    font-size: 18px;
+    color: #4E4F51 ;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.reports_list figcaption a:hover{
+    color: #238BF6 ;
+    text-decoration: none;
+}
+.reports_list figure p{
+    font-size: 14px;
+    line-height: 24px;
+    height: 48px;
+    color: #595B64 ;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+}
+.reports_list figure div span{
+    margin-right: 30px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #9A9CA4 ;
+}
+.reports_list figure div span i.iconfont{
+    font-size: 16px;
+    line-height: 18px;
+    margin-right:5px;
+}

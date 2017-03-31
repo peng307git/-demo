@@ -1,0 +1,285 @@
+@CHARSET "UTF-8";
+
+.mg-sales{
+    margin-top: 10px;
+}
+
+.mg-sales-countdown, .mg-sales-total, .mg-sales-date{
+    float: left;
+    margin-right: 20px;
+}
+.mg-sales-countdown h5, .mg-sales-total h5, .mg-sales-date h5{
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+}
+.mg-sales-countdown h5{
+    background: url('../images/sandglass.png') no-repeat right center;
+    margin: 0 20px;
+}
+.mg-sales-total h5{
+    background: #0079b0 url('../images/earth.png') no-repeat 420px center;
+    padding-left: 30px;
+    color: #fff;
+}
+.mg-sales-countdown p, .mg-sales-total p, .mg-sales-date p{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 22px;
+}
+.mg-sales-countdown{
+    background: #242a2f;
+    width: 220px;
+    color: #fff;
+}
+.mg-sales-total{
+    background: #00a0e9;
+    width: 475px;
+    color: #fff;
+}
+.mg-sales-date{
+    margin-right: 0;
+    width: 130px;
+    text-align: center;
+}
+.mg-sales-date-year{
+    background: #33475f;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    font-size: 14px;
+}
+.mg-sales-date-day{
+    background: #e2dede;
+    height: 65px;
+    line-height: 65px;
+    font-size: 44px;
+}
+.mg-sales-date-week{
+    background: #e2dede;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;    
+}
+.current-weekday{
+    display: inline-block;
+    padding: 0 20px;
+    border-top: 1px solid #8a8d8e;
+}
+.mg-price{
+    position: relative;
+    background: #ebebeb;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+.mg-status-item{
+    float: left;
+    background: #31393f;
+    padding: 10px 3%;
+    width: 19%;
+    color: #fff;
+}
+.mg-status-item h5{
+    border-bottom: 1px solid #242a2f;
+    text-align: center;
+    line-height: 27px;  
+}
+.mg-status-item p{
+    text-align: center;
+    line-height: 37px;
+    font-size: 18px;
+}
+.price-change{
+    background: url('../images/arrow-up.png') no-repeat right 10px;
+    
+}
+.price-change-down{
+    background-image: url("../images/arrow-down.png");
+}
+.mg-sell-form{
+    margin-top: 50px;
+    margin-left: 100px;
+    font-size: 16px;
+}
+.mg-sell-form .form-item{
+    margin-top: 20px;
+}
+.mg-sell-form .form-input{
+    background: #f0f3f5;
+    border: 1px solid #ddd;
+    padding: 0 5px;
+    width: 245px;
+    height: 38px;
+    line-height: 38px;
+}
+.mg-sell-form .form-label{
+    margin-left: -330px;
+    width: 320px;
+    height: 40px;
+    line-height: 40px;
+}
+.mg-sell-form .form-text{
+    height: 40px;
+    line-height: 40px;  
+}
+.mg-sell-form .form-notice {
+    padding: 5px 0;
+}
+.mg-sell-form .form-notice .form-text{
+    font-size: 14px;
+    line-height: 30px;  
+}
+.mg-sell-form .form-notice i{
+    font-style: normal;
+    font-weight: bold;
+    color: #eb4f38;
+}
+.mg-sell-form .btn-submit-sell{
+    background: #eb4f38;
+    padding: 10px;
+    line-height: 34px;
+    color: #FFF;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn-open-wrap{
+    text-align: center;
+}
+.btn-buy-mp{
+    background:#0E8BEC;
+    display: inline-block;
+    border: none;
+    width:160px;
+    height:40px;
+    line-height:40px;
+    font-size: 14px;
+    color: #FFF;
+    text-decoration: none;
+    margin-top:20px;
+}
+.soldmg-list{
+    margin-top: 30px;
+}
+.soldmg-list-title h5{
+    height:24px;
+    line-height: 24px;
+    font-size: 16px;
+    color: #333;
+    border-bottom: #333 solid 1px;
+}
+.soldmg-list-summary{
+    font-size: 14px;
+    line-height: 30px;
+    text-align: right;
+}
+.soldmg-list-summary span{ padding: 0 10px;}
+.soldmg-list-content{
+    margin-top: 10px;
+}
+.soldmg-list .table-thead{
+    background: #636D7C;
+    height: 54px;
+    font-size: 14px;
+    line-height: 54px;
+    color: #FFF;
+    border-radius: 5px 5px 0 0;
+}
+.soldmg-tr-time{
+    width: 25%;
+}
+.soldmg-tr-price{
+    width: 25%;
+}
+.soldmg-tr-number{
+    width: 24.6%;
+}
+.soldmg-tr-income{
+    width: 25%;
+}
+.table-tbody .soldmg-tr-time,.table-tbody .soldmg-tr-price,.table-tbody .soldmg-tr-number{
+    border-right: #EEE solid 1px;
+}
+.table-tbody .table-td{
+    border-top: #BBBFC5 solid 1px;
+}
+.soldmg-list .table-tbody{
+    border: 1px solid #ddd;
+    border-top: none;
+    line-height: 44px;
+    background: #DDD;
+    font-size: 14px;
+    border-radius: 0 0 5px 5px;
+}
+.soldmg-list .table-td{
+    line-height: 44px;
+}
+.soldmg-list .soldmg-table-pager {
+    padding: 15px 0;
+    font-size: 14px;
+    text-align: center;
+}
+.soldmg-list .soldmg-table-pager i{
+    color: #9BC2E3;
+    font-style: normal;
+}
+.soldmg-list .soldmg-table-pager a{
+    padding: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+.soldmg-list .soldmg-table-pager a:hover{
+    color: #9BC2E3;
+    text-decoration: underline;
+}
+.soldmg-list .soldmg-table-pager a.cannot{
+    color: #999;
+    cursor: default;
+}
+.soldmg-list .soldmg-table-pager .cannot:hover{
+    text-decoration: none;
+}
+.soldmg-list .soldmg-table-pager em{
+    padding: 0 10px;
+}
+.mg-price-tip-btn{
+    background: url("../images/exclamation.png") no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.mg-price-tip{
+    display: none;
+    background: #484849;
+    position: absolute;
+    top: 95px;
+    left: 0;
+    padding: 10px;
+    line-height: 22px;
+    color: #fff;
+}
+.mg-price-tip span{
+    position: absolute;
+    top: -10px;
+    left: 135px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #484849 transparent;
+}
+.modal-mid{
+	width:510px;
+}
+.mg-price-tip table{
+    text-align: center;
+}
+.mg-price-tip table td{
+    padding: 0 10px;
+}

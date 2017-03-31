@@ -1,0 +1,136 @@
+﻿@charset 'utf-8';
+.m-wrap{
+  width: 100%;
+}
+/*footer*/
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    background: #353840;
+    font-size: 14px;
+    color: #7A8286;
+    text-align:center;
+}
+.footer-copyright{
+    padding: 50px 0 0;
+    text-align: center;
+}
+.footer-copyright a,.footer-copyright  a:visited{
+    color: #7A8286;
+}
+.footer-moudle{
+  width: 100%;
+  margin: 20px auto;
+}
+.footer-moudle h4{
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0 auto 10px;
+  color: #fff;
+}
+.footer-moudle h4:after{
+  position: absolute;
+  left: 50%;
+  bottom:0;
+  display: block;
+  width: 30%;
+  height: 0;
+  margin-left: -15%;
+  border-bottom: #3C4048 solid 1px;
+  content: "";
+}
+.footer-moudle a{
+  color: #7A8286;
+  text-decoration: none;
+  line-height: 1.65;
+}
+.footer-moudle a:hover{
+  color: #FFF;
+}
+.footer-logo{
+  padding: 20px 100px;
+  color: #FFF;
+  font-size: 16px;
+  text-align: center;
+}
+.footer-logo i{
+  display: block;
+  font-size: 70px;
+}
+.footer .language{
+  width: 200px; 
+  height: 30px;
+  line-height: 30px;
+  color: #FFF;
+  font-size: 12px;
+  text-indent: 30px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+.footer .language:hover{
+  color: #FFF;
+}
+.language .arrow-down {
+  float: right;
+  width:28px; 
+  height:30px; 
+  font-size: 12px;
+  line-height: 28px;
+  text-align: center;
+  text-indent: 0;
+  transition: transform .5s;
+  transform-origin:50% 50%;
+  transform:rotateZ(90deg);
+}
+.language.hover .arrow-down {
+  transform:rotateZ(-90deg);
+}
+.footer .language ul{
+  width: 200px;
+  height: 86px;
+  background: #1d2022;
+  color: #7b7e89;
+  display: none;
+  line-height: 28px;
+}
+.footer .language.hover ul{
+  display: block;
+}
+.footer .language ul li{
+  position: relative;
+  background: #1d2022;
+  text-indent: 0;
+}
+.footer .chainlogo{
+  background:#5F6471 url('../../v6/images/china_bg.png') no-repeat 11px 6px;
+  background-size: 11%; 
+}
+.footer .hklogo{
+  background:#5F6471 url('../../v6/images/hk_bg.png') no-repeat 11px 6px;
+  background-size: 11%; 
+}
+.footer .usalogo{
+  background:#5F6471 url('../../v6/images/usa_bg.png') no-repeat 11px 6px;
+  background-size: 11%; 
+  margin-top: 45px;
+}
+.footer .language img{
+  width: 20px;
+  height: 14px;
+  position: absolute;
+  top: 7px;
+  left: 11px;
+}
+.footer .language ul a{
+  text-decoration: none;
+  line-height: 30px;
+  display: block;
+  color: #7b7e89;
+}
+.footer .language ul li a:hover{
+  color: #fff;
+}
+.footer .language ul .language_active{
+  background:#2a2e31 url('../../v6/images/language_ok.png') no-repeat 180px 6px;
+  background-size: 6%; 
+}

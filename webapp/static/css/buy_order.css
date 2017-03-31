@@ -1,0 +1,470 @@
+@CHARSET "UTF-8";
+
+.buymain{
+    width: 1080px;
+    display: inline-block;
+}
+.buytitle{
+    width: 1080px;
+    height: 40px;
+    background: #ebeff0;
+    line-height: 40px;
+    font-size: 18px;
+    color: #333;
+
+}
+.buybody{
+    width: 100%;
+    background: #ffffff;
+    height: 446px;
+
+}
+
+.body-img{
+    width: 170px;
+    height: 170px;
+    float: left;
+}
+.body-img img{
+    width: 170px;
+    height: 170px;
+}
+
+.bodyinput{
+    /* height: 30px;
+     display: inline-block;
+     font-size: 14px;
+     margin-left: 54px;
+     margin-top: 25px;*/
+    width: 100%;
+    position: relative;
+    top: 34px;
+    font-size: 14px;
+    text-align: left;
+    text-indent: 50px;
+}
+#text-num{
+    width: 25px;
+    padding-left: 18px;
+    padding-right: 18px;
+    height: 28px;
+    border: 1px solid #cccccc;
+    background: #FFF;
+}
+#btnup,#btndown{
+    display: inline-block;
+    font-size: 14px;
+    width: 22px;
+    height: 14px;
+    line-height: 14px;
+    border:none;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #ccc;
+
+}
+#btnup{
+    position: relative;
+    top:-6px;
+    background: url(../images/buyup.png) no-repeat center;
+}
+#btndown{
+    position: relative;
+    left: -26px;
+    top: 9px;
+    background: url(../images/buydown.png) no-repeat center;
+}
+.buymony{
+    width: 100%;
+    height: 16px;
+    position: relative;
+    top: 50px;
+    font-size: 14px;
+    text-align: left;
+    text-indent: 50px;
+}
+.buymony .buymonydiv{
+    display: inline-block;
+    text-indent:0;
+    text-align: left;
+    font-size: 14px;
+    color: #0e8bec;
+}
+
+.buy_process{
+    width: 650px;
+    height: 66px;
+    margin-top: 120px;
+    position: relative;
+
+}
+.proheaddiv{
+    height: 34px;
+    margin-bottom: 12px;
+}
+.buy_process span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    line-height: 30px;
+    position: relative;
+}
+.prospan1{
+    float: left;
+
+    left: 30px;
+}
+.prospan3{
+    float: right;
+    left: -30px;
+}
+.buy_process em{
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    width: 512px;
+    height: 2px;
+    background: #ccc;
+}
+.bodystrong,.bodystrong1{
+    font-size: 12px;
+    color: #666;
+    float: left;
+}
+.bodystrong1{
+    float: right;
+    position: relative;
+    right: 30px;
+}
+.buyfoot{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.foot_body{
+    display: inline-block;
+    width: 1042px;
+
+}
+.foot_body span{
+    float: left;
+}
+
+.foot_a{
+    float: right;
+    color: #0e8bec;
+    text-decoration: none;
+}
+.foot_a_btn{
+    display:block;
+    float: inherit;
+    width:160px;
+    height:40px;
+    margin:20px auto 0;
+    text-align:center;
+    line-height:38px;
+    color:#fff;
+    background:#0E8BEC;
+    font-size:14px;
+}
+.footwarp{
+    margin-top: 24px;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.btn{
+    /*width: 160px;*/
+    height: 40px;
+    padding: 0 30px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    background-color: #008cf4;
+    border:none;
+    margin-top: 36px;
+    cursor: pointer;
+}
+#nextbtn{
+    margin-bottom: 20px;
+}
+.footul ul{
+    width: 1038px;
+    height: 38px;
+    line-height: 38px;
+    background:#fff;
+    border: 1px solid #fff;
+    color: #333;
+}
+
+.footul li{
+    height: 38px;
+    line-height: 38px;
+    float: left;
+}
+.width1{ width: 42px;
+    background: url(../images/buynone.png) no-repeat 24px 12px;
+}
+.width2{ width: 412px; text-align: left;}
+.width3{ width: 290px; text-align: left;}
+.width4{ width: 170px; }
+.width5{ width: 120px;
+    color: #0e8bec;
+    background: url(../images/buyright.png) no-repeat 90px 10px;
+    cursor: pointer;
+    display: none;
+
+}
+.span65{
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    position: relative;
+    left: 4px;
+}
+.width3 .nameaddp{
+    display: inline-block;
+    width: 230px;
+    line-height: 19px;
+}
+
+.width2 .dizhiadd{
+    display: inline-block;
+    width: 405px;
+    height: auto;
+    line-height: 19px;
+}
+.width2 .dizhiadd span{
+    display: inline-block;
+    float: left;
+}
+.width4 .span1{
+    display: inline-block;
+    text-indent: 10px;
+}
+.linkok{
+    height: 470px;
+    background: #fff;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.okbody{
+    display: inline-block;
+    width: 1040px;
+    height: 100%;
+    border-top:1px solid #ccc;
+    text-align: center;
+    background: url(../images/buyok.png) no-repeat 396px 156px;
+}
+.okbody h2{
+    margin-top: 156px;
+    width: 100%;
+    font-size: 36px;
+    text-align: left;
+    text-indent: 476px;
+    display: inline-block;
+}
+#towbtn{
+    position:relative;
+    top: 160px;
+
+}
+.okbody div{
+    display: inline-block;
+    width: 100%;
+    height: 18px;
+    position: relative;
+    text-align: left;
+    font-size: 14px;
+    text-indent: 476px;
+    font-weight: bold;
+}
+.oknumber{
+    color: #0e8bec;
+}
+
+
+.goumai{
+    width: 580px;
+    overflow:hidden;
+    background: #fff;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius:2px;
+    position: absolute;
+    z-index: 3;
+    display: none;
+}
+.gou_head{
+    display: inline-block;
+    width: 100%;
+    height:30px;
+    line-height:30px;
+    background:#262F37;
+    color: #fff;
+    text-align: center;
+    border-radius:2px 2px 0 0;
+}
+.head_spanx{
+
+    width: auto;
+    height: auto;
+    left: 300px;
+    cursor: pointer;
+}
+.gou_body{
+    box-sizing: border-box;
+    padding:15px 40px 20px;
+}
+.gou_body h4, .gou_body h5{
+    height: 34px;
+    line-height: 34px;
+    width: 100%;
+    text-align: left;
+}
+.spanmony{
+    color: #008cf4;
+}
+.gou_body div{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    text-align: center;
+}
+.gou_body .pay-password{
+    width:230px;
+    height:38px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+}
+
+.gou_body input[type="text"]{
+    width:150px;
+    height:38px;
+    border:1px solid #ccc;
+    padding:  0 10px;
+}
+.gou_body #yanzhenbtn{
+    display: inline-block;
+    height: 40px;
+    font-size: 14px;
+    border:1px solid #ccc;
+    background-color: #f0f3f5;
+    color: #000;
+    position:relative;
+    top:1px;
+    padding: 0 5px;
+}
+#yanzhenok{
+    width: 160px;
+    height: 40px;
+    background:#0E8BEC;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size:14px;
+}
+.mywarp{
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.2;
+    z-index: 2;
+    display: none;
+}
+.countchina .bgblack,.countusa .bgblack{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.countchina .countmain,.countusa .countmain{
+    z-index: 100;
+    width: auto;
+    height: auto;
+    padding-bottom: 75px;
+    background: #fff;
+    position:absolute;
+    display: block;
+    /*border: 1px solid #000;*/
+    left: 50%;
+    top: 50%;
+    margin-left: -402px;
+    margin-top: -250px;
+}
+.countchina .countmain{
+    padding: 0;
+    padding-bottom: 41px;
+}
+/************************/
+.body_title{
+    width: 100%;
+    font-size: 30px;
+    color: #333;
+    margin-top: 30px;
+    text-align: left;
+    text-indent: 44px;
+}
+.body_head{
+    height: 170px;
+    width: 580px;
+    position: relative;
+    display: inline-block;
+    top: 76px;
+    left: 20px;
+}
+.countusabody{
+    width: 650px;
+    height: auto;
+    background: #fff;
+    color: #333;
+    font-size: 12px;
+    padding: 50px 95px 0px 30px ;
+    text-align: left;
+}
+.usabaocuo{
+    width: 100%;
+    float: left;
+    position: relative;
+    left: 166px;
+    display: none;
+    height: 14px;
+    line-height: 14px;
+    font-size: 12px;
+    color: red;
+}
+.lileft{
+  padding-left: 94px;
+}
+.textindent{
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+}
+#btnusacount,.usabtn{
+    margin-top: 0;
+    margin-left: 300px;
+    position: absolute;
+    bottom: 20px;
+}
+.width_xiu{
+    text-indent:
+}
+.noname{
+    font-size: 32px;
+    margin-top: 150px;
+}
+.spansheng,.spanshi,.spanxian,.spanadd{
+    display: none;
+}

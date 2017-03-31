@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+        function getCookie(name) {
+            var value = "; " + document.cookie;
+            var parts = value.split("; " + name + "=");
+            if (parts.length == 2) return parts.pop().split(";").shift();
+        }
+        (function(){
+            var sysLang = navigator.language;
+            var url = window.location.href;
+            var myCookieName = getCookie('langName');
+            console.log(myCookieName);
+            var urlPathName = location.pathname.length;
+           if( urlPathName < 2 ){
+                if(!myCookieName){
+                    if(sysLang && (['zh-CN', 'zh-TW', 'en-US','zh-cn','zh-tw','en-us'].indexOf(sysLang) > -1)){
+                        if(sysLang == 'zh-TW' || sysLang == 'zh-tw' ){
+                            sysLang = 'TW';
+                        }
+                        else if(sysLang == 'zh-CN' || sysLang == 'zh-cn'){
+                            sysLang = 'CN';
+                        }
+                        else{
+                            sysLang = 'EN';
+                        }
+                    }
+                }
+                else{
+                        sysLang = myCookieName;
+                }
+                location.replace('/download_'+sysLang+'.html');
+            }
+        })();
+    </script>
+    <link rel="import" href="/widget/headlink/headlink.html?__inline" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <link rel="BOOKMARK" href="/static/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/static/css/globle.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/play_video.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/download.css"/>
+    <script src='/static/js/jquery-1.11.2.min.js'></script>
+    <script src='/static/js/jquery.zclip.min.js'></script>
+    <script src='/static/js/common.js'></script>
+    <script src="/static/js/play_video.js"></script>
+</head>
+<body>
+    <link rel="import" href="/widget/header/header_EN.html?__inline">
+    <section class="download-head height800"> <!--  首屏 -->
+        <div class="head-text">
+            <h1 class="head-title"><span class="head-color">Global </span> Consensus Love Renascence</h1>
+            <div class="head-data">
+            <!-- <div class="head-data-backopct"></div> 背景透明度-->
+                <div class="data-int1">
+                    <h3 class="data-title">Current Amount</h3>
+                    <div class="data-main"><span class="curr-amount"></span> MG</div>
+                    <div class="data-footer">Total: <span class="spanbr total-amount"></span> MG</div>
+                </div>
+                 <span class="data-border"></span>
+                <div class="data-int2">
+                    <h3 class="data-title">Surplus Interest</h3>
+                    <div class="data-main"><span class="rem-amount"></span> MG</div>
+                    <div class="data-footer">Next: <span class="spanbr next-amount"></span> MG</div>
+                </div> 
+                 <span class="data-border left580"></span>
+                <div class="data-int3">
+                    <h3 class="data-title">Current Rate</h3>
+                    <div class="data-main"><span class="max-rate"></span> %</div>
+                    <div class="data-footer">Next: <span class="next-rate"></span>%</div>
+                </div>
+            </div>
+            <footer class="head-footer">
+                <div class="prompt-box">
+                        <p>Date: 10th, Fed. 2017</p>
+                        <p>Applicable System:</p>
+                        <p>Win10/Win8/Win7/Vista/XP </p>
+                </div>
+                <div class="download_btn windowstab">
+                <a class="win windownload" href="http://7xpapt.com1.z0.glb.clouddn.com/MindBank_V1.2.4.exe">
+                    <i></i>
+                    <span>Windows Download</span> <br/>
+                    <b>V 1.2.4 (31MB)</b>
+                </a>
+                </div>
+                <div class="prompt-box box-right">
+                        <p>Date: 10th, Fed. 2017</p>
+                        <p>Applicable System:</p>
+                        <p>10.11and other higher version</p>
+                </div>
+                <div class="download_btn mactab">
+                <a class="win macdownload" href="http://7xpapt.com1.z0.glb.clouddn.com/MindAsset-Qt_V1.2.4.dmg">
+                    <i></i>
+                    <span>Mac Download</span> <br/> 
+                    <b>V 1.2.4 (30.8MB)</b>
+                </a>
+                </div> 
+            </footer>
+        </div>
+    </section>
+    <div class="com-video height800"> <!-- 播放视频 -->
+    <a class="play-hove vido_head" videohead="Global common mind, new born philanthropy" videoSrc = "https://o4we6sxpt.qnssl.com/Foundation.mp4"></a>
+        <h2>M.A Blockchain</h2>
+        <h4>The best solution to the global public blockchain ecolocy</h4>
+    </div>
+    <div class="interest interest-vote height800"> <!-- 系统利息 -->
+        <div class="wrap1170">
+            <div class="interest-logo">
+                <a class="vido_head video-gif" videohead="Mind Bank - System Trust Interest" videoSrc = "http://7xpapt.com1.z0.glb.clouddn.com/Mind%20Bank%20-%20System%20Trust%20Interest.mp4"></a>
+            </div>
+            <h2>System Trust Interest</h2>
+            <div class="interest-vote-text">
+                <h3>Stably Value Promotion, High Profit Channel</h3>
+                <p>The system interest will be deposited with account immediately automatically while users lock MG into Locktime. The deposited MG and the relative interest could be withdrew or used after unlocking the mature trust blocks. The trust system interest period of Mind Bank system are 16-1024 days in variety. The interest profit will be more once the locking time is longer.</p>
+                <button class="scroll0 interest-vote-btn">Mind Bank Download <span></span></button>
+                <div class="foot-text">Deposit into Mind Bank to earn more interest</div>
+            </div>
+        </div>
+    </div>
+    <div class="browser height800"> <!-- 区块浏览器 -->
+        <div class="wrap1170">
+            <h2>M.A Blockchain Explorer</h2>
+            <div class="browser-left">
+                <h3>Block Data Real-time Info</h3>
+                <p> The Blockchain explorer is the block checking tools for M.A Blockchain in Mind Bank system. It accomplishes the M.A Blockchain block data real-time update by data integration of  block amount, Bank address and the trade code. It’s convenient for users to check the blockchain trade information timely. Meanwhile it guarantee that all the decentralized system data is open and transparent.</p>
+                <div class="browser-whitediv">
+                    <h3>Multi-dimension Data Inquire</h3>
+                    <ul>
+                        <li><span class="browser-dot"></span>Check the block amount for trade info</li>
+                        <li><span class="browser-dot"></span>Input Bank address for trade record</li>
+                        <li><span class="browser-dot"></span>Input trade code for trade details</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="browser-logo">
+                <a class="vido_head video-gif" videohead="Mind Bank - M.A Blockchain Explorer" videoSrc = "http://7xpapt.com1.z0.glb.clouddn.com/Mind%20Bank%20-%20M.A%20Blockchain%20Explorer.mp4"></a>
+            </div>
+        </div>
+    </div>
+    <div class="vote interest-vote height800"> <!-- 公益投票 -->
+        <div class="wrap1170">
+            <div class="interest-logo">
+                <a class="vido_head video-gif" videohead="Mind Bank - Public Benefit and Donation Mechanism" videoSrc = "
+ http://7xpapt.com1.z0.glb.clouddn.com/Mind%20Bank%20-%20Public%20Benefit%20and%20Donation%20....mp4"></a>
+            </div>
+            <h2>Public Benefit and Donation Mechanism</h2>
+            <div class="interest-vote-text">
+                <h3>Build the Social Love Convention</h3>
+                <p>Users could do the global public benefit vote in every Century. The former public benefit organizations will win all the public benefit donations from the global users and the 50% website handling fee generated in all the global trade this Century. Meanwhile, the users could willingly choose to donate MG to the charities selected by the global public benefit vote.</p>
+                <a href="org_list_EN.html" target="_blank" class="interest-vote-btn vote-btn">Check the public benefit organizations <span></span></a>
+            </div>
+            </div>
+        </div>
+    <div class="innovate"> <!-- 6屏 -->
+         <div class="innovate-head">
+             <h2>Creation and Trial</h2>
+             <h3>Blockchain Technology</h3>
+         </div>
+        <ul class="innovate-ul">
+            <li>
+                <div class="innovate-logo">
+                    <img src="/static/images/download/icon1.png">
+                </div>
+                <div class="innovate-com">
+                    <h3>Blockchain Contraction Technology</h3>
+                    <h4>Save the System Space</h4>
+                    <p>The reasonable space compression saves the data completely on more nodes without losing the efficiency and accuracy. It signifies the further deduct of cost and a substantial savings of hardware resource no matter for the blockchain website or every node server.</p>
+                </div>
+            </li>
+            <li>
+                <div class="innovate-logo">
+                    <img src="/static/images/download/icon2.png">
+                </div>
+                <div class="innovate-com">
+                    <h3>Mempool Memory Protection</h3>
+                    <h4>Avoid Downtime</h4>
+                    <p>In view of the security, the system adds up the Mempool Volume Protection function. The system will delete the past information automatically to avoid the large tracts of node disruption for Flood Attack when the maximum volume peaks.</p>
+                </div>
+            </li>
+            <li>
+                <div class="innovate-logo">
+                    <img src="/static/images/download/icon3.png">
+                </div>
+                <div class="innovate-com">
+                    <h3>Instantly Switchover Account</h3>
+                    <h4>Improve the operation convenience</h4>
+                    <p>The creative SE technique, Script2TxPosDB，will hunt the balance in every address instantly. It will achieve the instantly switchover among many Mind Bank accounts without restarting the client side or scanning the blockchain to refreshing for a long time.</p>
+                </div>
+            </li>
+            <li>
+                <div class="innovate-logo">
+                    <img src="/static/images/download/icon4.png">
+                </div>
+                <div class="innovate-com">
+                    <h3>Trade volume self-check</h3>
+                    <h4>Confirm a correct trade data</h4>
+                    <p>The system adds the self-inspection of transaction amount, which makes up the issues of “sky-high fees” due to the mistakes from system calculation for some cases. Particularly it is applicable to the lightweight banks, without the trust of the server, automatically checks the program data before the confirmation of the transaction to ensure that the transaction amount is correct.</p>
+                </div>
+            </li>
+            <li>
+                <div class="innovate-logo">
+                    <img src="/static/images/download/icon5.png">
+                </div>
+                <div class="innovate-com">
+                    <h3>POV Contract Dynamic Mechanism</h3>
+                    <h4>Open and transparent all the way</h4>
+                    <p>Enable POV (Proof of vote) smart contract dynamic mechanism, which receives the whole network transaction fees of M.A Blockchain , and the system automatically distributes according to the list selected by POV, making the data of complete blockchain accounts full open and transparent.</p>
+                </div>
+            </li>
+            <li class="height380">
+                <div class="innovate-logo">
+                    <img src="/static/images/download/icon6.png">
+                </div>
+                <div class="innovate-com">
+                    <h3>Lock time into blockchain</h3>
+                    <h4>Value Space of Naturally Rising</h4>
+                    <p>The technical innovations on locktime will effectively reduce the useless transaction volumes in the system, and also will  lay a stable and balanced value basis for the improvement of future market prices, and expand the growth space of value and price under the approval and jointly maintenance from the global participants and users.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+<link rel="import" href="/widget/footer/footer_EN.html?__inline" />
+<!-- 播放器 -->
+<div class="video-modal" id="receiveModal">
+        <div class="video-bg"></div>
+        <div class="video">
+               <h2>Global common mind, new born philanthropy</h2>
+               <video id="myVideo">
+                       <source src="https://o4we6sxpt.qnssl.com/Foundation.mp4" type="video/mp4" />
+               </video>
+               <span class="close-video"></span>
+        </div>
+</div>
+<!-- 基金宣言广告 -->
+<div class="feedback-index-bg">
+    <div class="feedback-text">
+        <h2>M.A Blockchain Announcement is officially issued, click to check.</h2>
+        <p>Write down the story about you and Mind Asset, you will have the chance to show up on the CENTURY APPOINTMENT board and win huge MG award!
+        </p>
+        <div class="isbtn">Learn more</div>
+        <span class="feedback-close"></span>
+    </div>
+</div>
+<!-- 播放器END -->
+    <script>
+        $(function(){
+            // 基金宣言广告
+                $(".feedback-index-bg").on("click",function(event){
+                    event.preventDefault();
+                    if(navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)){
+                        window.location = "http://www.mindasset.com/feedback/index?locale=en_US";
+                    }else{
+                        window.open("http://www.mindasset.com/feedback/index?locale=en_US");
+                    }
+                })
+                $(".feedback-close").on("click",function(event){
+                    event.preventDefault();
+                    $(".feedback-index-bg").hide().unbind();
+                })
+            var video = document.getElementById('myVideo');
+            var play = new playvideo({
+                'id':video,
+                'homeplay':'.vido_head',
+                'alertparent':'.video-modal',
+                'title':'.video h2'
+            });
+            //鼠标移入下载提示窗
+                 $('.download_btn').hover(function(){
+                        $(this).prev().stop(true,true).slideDown(300);
+                 },function(){
+                        $(this).prev().stop(true,true).slideUp(300);
+                 })
+            
+            //实时获取钱包数据
+            $.ajax({
+               url: "http://www.mindasset.com/openapi/qukuai/interest",
+               type: "GET",
+               dataType: 'jsonp',
+               jsonpCallback: 'interest',
+               success: function (data) {
+                    var currAmount = thousandBitSeparator(data.curr_interest_total);
+                    var totalAmount = thousandBitSeparator(data.interest_total);
+                    var remAmount = thousandBitSeparator(data.curr_interest_surplus);
+                    var nextAmount = thousandBitSeparator(data.next_interest_total);
+                    var maxRate = data.curr_max_interest_rate_100;
+                    var nextRate = data.next_max_interest_rate_100;
+                    $('.curr-amount').html(currAmount); //本阶段总利息  curr_interest_total
+                    $('.total-amount').html(totalAmount);     //全部利息   interest_total
+                    $('.rem-amount').html(remAmount); //本阶段剩余利息  curr_interest_surplus
+                    $('.next-amount').html(nextAmount);  //下阶段总利息  next_interest_total
+                    $('.max-rate').html(maxRate); //本阶段最高利率  
+                    $('.next-rate').html(nextRate); //下阶段最高利率  
+               }
+           });
+            function thousandBitSeparator(num){  //逗号分隔数据
+                return num && (num.toString().indexOf('.') != -1 ? num.toString().replace(/(\d)(?=(\d{3})+\.)/g,
+                        function($0, $1) {
+                            return $1 + ",";
+                        }) : num.toString().replace(/(\d)(?=(\d{3})+\b)/g,
+                        function($0, $1) {
+                            return $1 + ",";
+                        }));
+            } 
+        })
+    </script>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261064622'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1261064622' type='text/javascript'%3E%3C/script%3E"));
+        document.getElementById("cnzz_stat_icon_1261064622").style.display = "none";
+    </script>
+</body>
+</html>

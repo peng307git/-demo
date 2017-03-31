@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+    function getCookie(name) {
+            var value = "; " + document.cookie;
+            var parts = value.split("; " + name + "=");
+            if (parts.length == 2) return parts.pop().split(";").shift();
+        }
+        (function(){
+            var sysLang = navigator.language;
+            var url = window.location.href;
+            var myCookieName = getCookie('langName');
+            console.log(myCookieName);
+            var urlPathName = location.pathname.length;
+           if( urlPathName < 2 ){
+                if(!myCookieName){
+                    if(sysLang && (['zh-CN', 'zh-TW', 'en-US','zh-cn','zh-tw','en-us'].indexOf(sysLang) > -1)){
+                        if(sysLang == 'zh-TW' || sysLang == 'zh-tw' ){
+                            sysLang = 'TW';
+                        }
+                        else if(sysLang == 'zh-CN' || sysLang == 'zh-cn'){
+                            sysLang = 'CN';
+                        }
+                        else{
+                            sysLang = 'EN';
+                        }
+                    }
+                }
+                else{
+                        sysLang = myCookieName;
+                }
+                location.replace('/download_'+sysLang+'.html');
+            }
+        })();
+    </script>
+    <link rel="import" href="/widget/headlink/headlink.html?__inline" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <link rel="BOOKMARK" href="/static/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/static/css/globle.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/play_video.css"/>
+    <link rel="stylesheet" type="text/css" href="/static/css/download.css"/>
+    <script src='/static/js/jquery-1.11.2.min.js'></script>
+    <script src='/static/js/jquery.zclip.min.js'></script>
+    <script src='/static/js/common.js'></script>
+    <script src="/static/js/play_video.js"></script>
+</head>
+<body>
+    <link rel="import" href="/widget/header/header_TW.html?__inline">
+    <section class="download-head height800"> <!--  首屏 -->
+        <div class="head-text">
+            <h1 class="head-title"><span class="head-color">全球</span>共識&nbsp;大愛新生</h1>
+            <div class="head-data">
+          <!--   <div class="head-data-backopct"></div> 背景透明度-->
+                <div class="data-int1">
+                    <h3 class="data-title">本階段總利息</h3>
+                    <div class="data-main"><span class="curr-amount"></span> MG</div>
+                    <div class="data-footer">全部利息: <span class="total-amount"></span>MG</div>
+                </div>
+                 <span class="data-border"></span> 
+                <div class="data-int2">
+                    <h3 class="data-title">本階段剩余利息</h3>
+                    <div class="data-main"><span class="rem-amount"></span> MG</div>
+                    <div class="data-footer">下階段: <span class="next-amount"></span>MG</div>
+                </div> 
+                 <span class="data-border left580"></span>
+                <div class="data-int3">
+                    <h3 class="data-title">本階段最高<span class="app-data-days">百日</span>利率</h3>
+                    <div class="data-main"><span class="max-rate"></span> %</div>
+                    <div class="data-footer">下階段: <span class="next-rate"></span>%</div>
+                </div>
+            </div>
+            <footer class="head-footer">
+                <div class="prompt-box">
+                        <p>更新時間：2017年02月10日</p>
+                        <p>適用系統：Win10/Win8/Win7/Vista/XP</p>
+                </div>
+                <div class="download_btn windowstab">
+                <a class="win windownload" href="http://7xpapt.com1.z0.glb.clouddn.com/MindBank_V1.2.4.exe">
+                    <i></i>
+                    <span>Windows桌面版下載</span> <br/>
+                    <b>V 1.2.4 (31MB)</b>
+                </a>
+                </div>
+                <div class="prompt-box box-right">
+                        <p>更新時間：2017年02月10日</p>
+                        <p>適用系統：10.11及以上版本</p>
+                </div>
+                <div class="download_btn mactab">
+                <a class="win macdownload" href="http://7xpapt.com1.z0.glb.clouddn.com/MindAsset-Qt_V1.2.4.dmg">
+                    <i></i>
+                    <span>Mac桌面版下載</span> <br/> 
+                    <b>V 1.2.4 (30.8MB)</b>
+                </a>
+                </div> 
+            </footer>
+        </div>
+    </section>
+    <div class="com-video height800"> <!-- 播放视频 -->
+        <a class="play-hove vido_head" videohead="全球共識，大愛新生" videoSrc = "https://o4we6sxpt.qnssl.com/Foundation.mp4"></a>
+        <h2>M.A Blockchain</h2>
+        <h4>全球公共區塊鏈生態最佳解決方案</h4>
+    </div>
+    <div class="interest interest-vote height800"> <!-- 系统利息 -->
+        <div class="wrap1170">
+            <div class="interest-logo">
+                <a class="vido_head video-gif" videohead="智慧銀行 - 系統信任利息" videoSrc = "http://7xpapt.com1.z0.glb.clouddn.com/%E6%99%BA%E6%85%A7%E9%93%B6%E8%A1%8C%20-%20%E7%B3%BB%E7%BB%9F%E4%BF%A1%E4%BB%BB%E5%88%A9%E6%81%AF.mp4"></a>
+            </div>
+            <h2>系統信任利息</h2>
+            <div class="interest-vote-text">
+                <h3>價值穩定提升，高利率收益渠道</h3>
+                <p>在系統用戶將MG 鎖入Locktime 的同時，系統利息就會立刻自動存入到個人賬戶當中，待信任區塊到期解鎖後，便可以對存入的MG 和所獲的利息進行提取和使用。智慧銀行系統信任利息的信任期限從16-1024天不等，鎖定時間越長則利息收益越高。</p>
+                <button class="scroll0 interest-vote-btn">下載智慧銀行 <span></span></button>
+                <div class="foot-text">存入智慧銀行，獲得更多利息!</div>
+            </div>
+        </div>
+    </div>
+    <div class="browser height800"> <!-- 区块浏览器 -->
+        <div class="wrap1170">
+            <h2>區塊鏈瀏覽器</h2>
+            <div class="browser-left">
+                <h3>M.A Blockchain區塊數據實時信息</h3>
+                <p>區塊鏈瀏覽器是嵌入在智慧銀行系統中的M.A Blockchain的區塊查詢工具，通過區塊高度（即區塊數）、銀行地址、每筆交易產生的交易號等三個維度的區塊數據的整合，實現M.A Blockchain 區塊數據的實時更新，便於系統用戶進行區塊鏈交易信息的實時查看，同時保證去中心化系統中所有數據全部公開、透明。</p>
+                <div class="browser-whitediv">
+                    <h3>多維度數據查詢</h3>
+                    <ul>
+                        <li><span class="browser-dot"></span>根據區塊數查詢交易信息</li>
+                        <li><span class="browser-dot"></span>輸入銀行地址查詢交易記錄</li>
+                        <li><span class="browser-dot"></span>輸入交易編號查詢交易詳情</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="browser-logo">
+                <a class="vido_head video-gif" videohead="智慧銀行 - 區塊鏈瀏覽器" videoSrc = "http://7xpapt.com1.z0.glb.clouddn.com/%E6%99%BA%E6%85%A7%E9%93%B6%E8%A1%8C%20-%20%E5%8C%BA%E5%9D%97%E9%93%BE%E6%B5%8F%E8%A7%88%E5%99%A8.mp4"></a>
+            </div>
+        </div>
+    </div>
+    <div class="vote interest-vote height800"> <!-- 公益投票 -->
+        <div class="wrap1170">
+            <div class="interest-logo">
+                <a class="vido_head video-gif" videohead="智慧銀行 - 公益投票及捐助機制" videoSrc = "http://7xpapt.com1.z0.glb.clouddn.com/%E6%99%BA%E6%85%A7%E9%93%B6%E8%A1%8C%20-%20%E5%85%AC%E7%9B%8A%E6%8A%95%E7%A5%A8%E5%8F%8A%E6%8D%90%E5%8A%A9%E6%9C%BA%E5%88%B6.mp4"></a>
+            </div>
+            <h2>公益投票及捐助機制</h2>
+            <div class="interest-vote-text">
+                <h3>共建人類社會大愛公約</h3>
+                <p>系統使用者可以在每個世紀中進行全球公益投票，票數靠前的公益組織，將獲得當前世紀全球所有交易過程中所產生的網絡手續費的50%，以及全球系統使用者的公益捐款總額。同時，系統使用者可以自願選擇將MG捐贈給當前世紀通過全球公益投票所選出的公益組織。</p>
+                <a href="org_list_TW.html" target="_blank"  class="interest-vote-btn vote-btn">查看公益機構 <span></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="innovate"> <!-- 6屏 -->
+         <div class="innovate-head">
+             <h2>創新及嘗試</h2>
+             <h3>區塊鏈技術</h3>
+         </div>
+        <ul class="innovate-ul">
+            <li>
+                <div class="innovate-logo">
+                    <img src="/static/images/download/icon1.png">
+                </div>
+                <div class="innovate-com">
+                    <h3>區塊鏈壓縮技術</h3>
+                    <h4>節約系統空間</h4>
+                    <p>在不損失效率和精度的前提下，將數據完整地保存在更多節點上，最大程度地壓縮數據庫的容量。無論是對於區塊鏈還是每個節點服務器來說，都意味著成本的進壹步降低以及資源的節約。</p>
+                </div>
+            </li>
+            <li>
+                <div class="innovate-logo">
+                    <img src="/static/images/download/icon2.png">
+                </div>
+                <div class="innovate-com">
+                    <h3>Mempool 容積保護</h3>
+                    <h4>規避宕機風險</h4>
+                    <p>考慮到系統安全性問題，智慧銀行系統增加了Mempool（內存池）容積保護的功能，當容量上限達到峰值時，系統會自動刪除老舊信息，從而避免被Flood Attack 而導致大面積節點宕機。</p>
+                </div>
+            </li>
+            <li>
+                <div class="innovate-logo">
+                    <img src="/static/images/download/icon3.png">
+                </div>
+                <div class="innovate-com">
+                    <h3>賬戶瞬時切換</h3>
+                    <h4>提升操作便捷度</h4>
+                    <p>創新的搜索引擎技術（Script2TxPosDB），可以瞬時搜索每個地址的帳戶余額，並實現多個智慧銀行賬戶之間的快速切換，而無需通過重啟客戶端或長時間的掃描區塊鏈數據來刷新賬戶余額。</p>
+                </div>
+            </li>
+            <li>
+                <div class="innovate-logo">
+                    <img src="/static/images/download/icon4.png">
+                </div>
+                <div class="innovate-com">
+                    <h3>交易金額自檢查</h3>
+                    <h4>確保交易數據無誤</h4>
+                    <p>系統增加交易金額自檢查功能，彌補了某些因系統計算錯誤而導致的“天價手續費”問題。特別適用於輕量級銀行，無需對服務器的信任，在確認交易前自動檢查程序數據，確保交易金額無誤。</p>
+                </div>
+            </li>
+            <li>
+                <div class="innovate-logo">
+                    <img src="/static/images/download/icon5.png">
+                </div>
+                <div class="innovate-com">
+                    <h3>POV動態合約機制</h3>
+                    <h4>全程公開透明</h4>
+                    <p>啟用POV（Proof of vote）動態合約，通過去中心化投票決定接收M.A Blockchain 交易手續費及捐助資金的公益組織，系統自動按照POV 選出的列表進行分配，整個賬目數據完全公開、透明。</p>
+                </div>
+            </li>
+            <li>
+                <div class="innovate-logo">
+                    <img src="/static/images/download/icon6.png">
+                </div>
+                <div class="innovate-com">
+                    <h3>Locktime鎖定時間入鏈</h3>
+                    <h4>自然上漲的價值空間</h4>
+                    <p>Locktime 的技術創新，將有效地控制系統中的無用功交易，同時為未來市場價格的提升奠定穩定、平衡價值基礎，並在全球參與者及使用者的認可與共同維護下，擴大價值與價格的增長空間。</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+<link rel="import" href="/widget/footer/footer_TW.html?__inline" />
+<!-- 播放器 -->
+<div class="video-modal" id="receiveModal">
+        <div class="video-bg"></div>
+        <div class="video">
+               <h2>全球共識，大愛新生</h2>
+               <video id="myVideo">
+                       <source src="https://o4we6sxpt.qnssl.com/Foundation.mp4" type="video/mp4" />
+               </video>
+               <span class="close-video"></span>
+        </div>
+</div>
+<!-- 基金宣言广告 -->
+<div class="feedback-index-bg">
+    <div class="feedback-text">
+        <h2>《M.A Blockchain宣言》正式公佈，點擊即可查看！</h2>
+        <p>寫下你與Mind Asset的故事，即有機會入選“世紀之約”精彩留言、獲得高額MG獎勵！
+        </p>
+        <div class="isbtn">查看更多</div>
+        <span class="feedback-close"></span>
+    </div>
+</div>
+<!-- 播放器END -->
+    <script>
+        $(function(){
+            // 基金宣言广告
+                $(".feedback-index-bg").on("click",function(event){
+                    event.preventDefault();
+                    if(navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)){
+                        window.location = "http://www.mindasset.com/feedback/index?locale=zh_TW";
+                    }else{
+                        window.open("http://www.mindasset.com/feedback/index?locale=zh_TW");
+                    }
+                })
+                $(".feedback-close").on("click",function(event){
+                    event.preventDefault();
+                    $(".feedback-index-bg").hide().unbind();
+                })
+            var video = document.getElementById('myVideo');
+            var play = new playvideo({
+                'id':video,
+                'homeplay':'.vido_head',
+                'alertparent':'.video-modal',
+                'title':'.video h2'
+            });
+            //鼠标移入下载提示窗
+                 $('.download_btn').hover(function(){
+                        $(this).prev().stop(true,true).slideDown(300);
+                 },function(){
+                        $(this).prev().stop(true,true).slideUp(300);
+                 })
+            
+            //实时获取钱包数据
+            $.ajax({
+               url: "http://www.mindasset.com/openapi/qukuai/interest",
+               type: "GET",
+               dataType: 'jsonp',
+               jsonpCallback: 'interest',
+               success: function (data) {
+                    var currAmount = thousandBitSeparator(data.curr_interest_total);
+                    var totalAmount = thousandBitSeparator(data.interest_total);
+                    var remAmount = thousandBitSeparator(data.curr_interest_surplus);
+                    var nextAmount = thousandBitSeparator(data.next_interest_total);
+                    var maxRate = data.curr_max_interest_rate_100;
+                    var nextRate = data.next_max_interest_rate_100;
+                    $('.curr-amount').html(currAmount); //本阶段总利息  curr_interest_total
+                    $('.total-amount').html(totalAmount);     //全部利息   interest_total
+                    $('.rem-amount').html(remAmount); //本阶段剩余利息  curr_interest_surplus
+                    $('.next-amount').html(nextAmount);  //下阶段总利息  next_interest_total
+                    $('.max-rate').html(maxRate); //本阶段最高利率  
+                    $('.next-rate').html(nextRate); //下阶段最高利率  
+               }
+           });
+            function thousandBitSeparator(num){  //逗号分隔数据
+                return num && (num.toString().indexOf('.') != -1 ? num.toString().replace(/(\d)(?=(\d{3})+\.)/g,
+                        function($0, $1) {
+                            return $1 + ",";
+                        }) : num.toString().replace(/(\d)(?=(\d{3})+\b)/g,
+                        function($0, $1) {
+                            return $1 + ",";
+                        }));
+            }       
+     })
+    </script>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261064622'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1261064622' type='text/javascript'%3E%3C/script%3E"));
+        document.getElementById("cnzz_stat_icon_1261064622").style.display = "none";
+    </script>
+</body>
+</html>

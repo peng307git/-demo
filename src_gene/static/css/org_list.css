@@ -1,0 +1,358 @@
+@CHARSET "UTF-8";
+/*公益机构*/
+/*轮播图*/
+.bg-slider-wrapper{
+    margin-top: 70px;
+    width: 100%;
+}
+.bg-slider-wrapper .flexslider{
+    border: 0;
+}
+.flexslider .slides img{
+    height: 300px;
+}
+.flex-control-nav {
+    bottom: 20px;
+    z-index: 2;
+}
+.flexslider .slides > li {
+    display: block;
+}
+.flex-control-paging li a {
+    width: 8px;
+    height: 8px;
+    background: none;
+    border: #FFF solid 1px;
+    box-shadow: none;
+}
+.flex-control-paging li a:hover {
+    border: #238BF6 solid 1px;
+    background: none;
+}
+.flex-control-paging li a.flex-active {
+    background: #FFF;
+}
+/*轮播图end*/
+.org_top_vote{
+    width: 100%;
+    height: 403px;
+    padding-top: 20px;
+    text-align: center;
+}
+.org_top_vote h3{
+    width: 100%;
+    height: 33px;
+    font-size: 24px;
+    color: #2E3332;
+    letter-spacing: 0.35px;
+    padding-bottom: 20px;
+    font-weight: normal;
+}
+.org_top_vote p{
+    width: 100%;
+    height: 20px;
+    font-size: 14px;
+    color: #858585;
+    letter-spacing: 0.2px;
+}
+.org_top_vote p a{
+    color: #00CDBA;
+    text-decoration: none;
+}
+.a_hover:hover{
+    text-decoration:underline;
+}
+.org_top_vote .thre_top{
+    width: 444px;
+    height: 180px;
+    padding-top: 70px;
+    padding-bottom: 80px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.thre_top > div{
+    width: 200px;
+    height: 178px;
+    background: #FFFFFF;
+    border: 1px solid #DCDDE4;
+    border-radius: 4px;
+}
+.thre_top > div:hover{
+    border-color: #00CDBA;
+}
+.thre_top .leftdiv{
+    float: left;
+}
+.thre_top .rightdiv{
+    float: right;
+}
+.img_div{
+    width: 100%;
+    height: 85px;
+    padding-top: 17px;
+    padding-bottom: 18px;
+}
+.img_div img{
+    height: 100%;
+}
+.thre_top h4{
+    width: 40px;
+    height: 2px;
+    background:#DCDDE4;
+    margin: 0 auto;
+}
+.thre_top footer{
+    width: 100%;
+    height: 38px;
+    margin-top: 19px;
+    border-radius: 0px 0px 4px 4px;
+}
+.thre_top footer h5{
+    font-size: 14px;
+    color: #858585;
+    padding: 0 6px;
+    font-weight: normal;
+    white-space: nowrap;         /*文本不进行换行*/
+    overflow: hidden;           /*隐藏溢出文本*/
+    text-overflow: ellipsis; /*多出文本使用 ....代替*/
+}
+.thre_top .foot_active{
+    background: #00CDBA;
+    line-height: 38px;
+    font-size: 14px;
+    color: #fff;
+}
+.thre_top footer span{
+    display: inline-block;
+    width: 63px;
+    height: 100%;
+    float: left;
+    padding-left: 57px;
+    padding-right: 26px;
+    display: none;
+}
+.thre_top footer i{
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    float: left;
+    margin-top: 14px;
+    background: url("../images/gotop.svg");
+    display: none;
+}
+/*百家公益机构*/
+.org_main{
+    width: 1170px;
+    height: auto;
+    border-top: 1px solid #D6D6D6;
+    margin: 0 auto;
+}
+.org_main > h2{
+    width: 100%;
+    height: 33px;
+    line-height: 33px;
+    font-size: 24px;
+    color: #2E3332;
+    letter-spacing: 0.35px;
+    padding-top: 80px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-weight: normal;
+}
+.org_main > h3 {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 34px;
+}
+.org_main > h3 > a {
+    font-size: 14px;
+    color: #00CDBA;
+    letter-spacing: 0.2px;
+    text-decoration: none;
+}
+.org_main .org_list{
+    width: 100%;
+    min-height: 666px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 140px;
+}
+.org_main .org_list ul{
+    width: 1170px;
+    height: auto;
+}
+.org_main .org_list li{
+    width: 200px;
+    height: 178px;
+    background: #FFFFFF;
+    border: 1px solid #DCDDE4;
+    border-radius: 4px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.org_main .org_list li:hover{
+    border-color: #00CDBA;
+}
+.list_main .li_div{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.li_div h4{
+    width: 40px;
+    height: 2px;
+    background:#DCDDE4;
+    margin: 0 auto;
+}
+.li_div h5{
+    font-size: 14px;
+    color: #858585;
+    padding: 0 6px;
+    font-weight: normal;
+    white-space: nowrap;         /*文本不进行换行*/
+    overflow: hidden;           /*隐藏溢出文本*/
+    text-overflow: ellipsis; /*多出文本使用 ....代替*/
+    padding-top: 18px;
+}
+.org-modal{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index:210; 
+    width: 100%;
+    height: 100%;
+}
+.org-modal .org_table{
+    width: 800px;
+    height: 500px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.30);
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -400px;
+    position: relative;
+}
+.org_table .org_tablehead{
+    width: 700px;
+    height: 200px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+.org_tablehead .org_img_div{
+    float: left;
+    text-align: center;
+    margin-right: 60px;
+    width: 198px;
+    height: 141px;
+    background: #FFFFFF;
+    border: 1px solid #DCDDE4;
+    border-radius: 8px;
+    padding-top: 57px;
+}
+.org_tablehead .text_div{
+    width: 436px;
+    height: 200px;
+    float: left;
+}
+.org_tablehead .text_div img{
+    width: 178px;
+    height: 85px;
+}
+.org_tablehead .text_div > h2 {
+    width: 100%;
+    height: 48px;
+    line-height: 24px;
+    font-size: 18px;
+    color: #2E3332;
+    letter-spacing: 0px;
+    padding-bottom: 15px;
+}
+.org_tablehead .text_div img{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 12px;
+}
+.org_tablehead .text_div .textdiv_hx{
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    color: #A0A0A0;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+.org_tablehead .text_div .textdiv_hx a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #A0A0A0;
+
+}
+.org_tablehead .text_div .textdiv_hx a:hover{
+    color: #1DC9B9;
+}
+.org_table .div_foot_text{
+    width: 700px;
+    height: 120px;
+    overflow-y: auto;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #2E3332;
+    letter-spacing: 0.2px;
+}   
+.org_table .orglist_close{
+    width: 434px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #1DC9B9;
+    border-radius: 2px;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.org_table .org_imgclose{
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    background: url('../images/close-modal.png') no-repeat;
+    background-size: 100%;
+}
+.org_table .org_imgclose:hover{
+    background: url('../images/close-modal-1.png') no-repeat;
+    background-size: 100%;
+}
+.orglist_close:hover{
+     background: #11ada8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

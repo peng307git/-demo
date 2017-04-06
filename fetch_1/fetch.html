@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+         // $.ajax({
+         //       url: "http://www.mindasset.com/openapi/qukuai/interest",
+         //       type: "GET",
+         //       dataType: 'jsonp',
+         //       jsonpCallback: 'interest',
+         //       success: function (data) {
+         //            var currAmount = thousandBitSeparator(data.curr_interest_total);
+         //            var totalAmount = thousandBitSeparator(data.interest_total);
+         //            var remAmount = thousandBitSeparator(data.curr_interest_surplus);
+         //            var nextAmount = thousandBitSeparator(data.next_interest_total);
+         //            var maxRate = data.curr_max_interest_rate_100;
+         //            var nextRate = data.next_max_interest_rate_100;
+         //            $('.curr-amount').html(currAmount); //本阶段总利息  curr_interest_total
+         //            $('.total-amount').html(totalAmount);     //全部利息   interest_total
+         //            $('.rem-amount').html(remAmount); //本阶段剩余利息  curr_interest_surplus
+         //            $('.next-amount').html(nextAmount);  //下阶段总利息  next_interest_total
+         //            $('.max-rate').html(maxRate); //本阶段最高利率  
+         //            $('.next-rate').html(nextRate); //下阶段最高利率 
+         //       }
+         //   });
+         fetchJsonp('http://www.mindasset.com/openapi/qukuai/interest', {
+            jsonpCallback: 'interest'
+          })
+          .then(function(response) {
+            return response.json()
+          }).then(function(json) {
+            console.log('parsed json', json)
+          }).catch(function(ex) {
+            console.log('parsing failed', ex)
+          })
+    </script>
+</body>
+</html>

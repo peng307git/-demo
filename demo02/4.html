@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{width:50px;height:50px;background: red;position:absolute;left:0;top:0;font-size: 30px;line-height:50px;text-align: center;color:white;}
+
+    </style>
+    <script type="text/javascript">
+
+        window.onload = function(){
+            var aDiv=document.getElementsByTagName('div');
+            var str="";
+            for(var i=0;i<20;i++){
+                str+='<div>'+i+'</div>';  //生成20个div
+            }
+            //生成20个div
+            document.body.innerHTML=str;
+
+            //循环这20个div
+            for(var i=0,j=0;i<20;i++){
+                aDiv[i].style.left=((i%10)*50)+"px";
+                if(i%10==0){   //当i为0，10，20 。。。这样的数时
+                    j++;       //j+1;
+                }
+                //第一次循环， i是0； j=1; 下面的意思时， (j-1)*50  ==  (1-1)*50  = 0px
+                //第10次循环， i是10； j就是等于2了。 (j-1)*50  ==  (2-1)*50  = 50px；
+                //就是从第10个div开始，从10 -20这10个div 全部加上top = 50px的值 就形成了断行
+                aDiv[i].style.top = ((j-1)*50)+"px";
+            }
+    }
+    </script>
+</head>
+<body>
+</body>
+</html>

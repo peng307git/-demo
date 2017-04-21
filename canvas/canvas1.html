@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #mycanvas{
+            width: 400px;
+            height: 400px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="mycanvas"></canvas>
+    <script>
+        var c = document.getElementById("mycanvas");
+        var ctex = c.getContext("2d");
+//        ctex.fillStyle = "#000";
+//        ctex.fillRect(10,10,100,100);
+        ctex.moveTo(0,0);
+        ctex.lineTo(400,200);
+        ctex.stroke()
+    </script>
+</body>
+</html>

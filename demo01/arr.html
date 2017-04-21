@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr = ['100px','abc'-6,[],-98765,34,-2,0,'300',,function () {alert(1)},null,document,[],true,'200px'-30,5,Number("abc",function () {alert(3)})]
+    var newarr = [];
+    for (var i=0; i<arr.length; i++){
+       if(typeof arr[i] === 'number' && !isNaN(arr[i])){
+           newarr.push(arr[i]);
+       }
+
+    }
+    console.log(newarr)
+
+
+</script>
+</body>
+</html>

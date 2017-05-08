@@ -13,10 +13,27 @@
             alert(namr);
         }
        // xx();
+       var app =200
         function test(test){
-                console.log(typeof test);
+                var app =100;
         }
-        test(100)
+        test();
+        console.log(app);
+        getScrollWidth();
+        function getScrollWidth() {
+          var noScroll, Scroll, oDiv = document.createElement("DIV");
+          oDiv.style.cssText = "position:absolute; top:-1000px; width:100px; height:100px; overflow:hidden;";
+          noScroll = document.body.appendChild(oDiv).clientWidth;
+          oDiv.style.overflowY = "scroll";
+          Scroll = oDiv.clientWidth;
+          document.body.removeChild(oDiv);
+          return noScroll-Scroll;
+        }
+        
+        var ns = function(){
+            console.log("ns");
+        }
+
     </script>
 </body>
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        dialog {
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 6px;
+            box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+        }
+        dialog::backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            }
+    </style>
+</head>
+<body>
+    <dialog>
+        <p>This is da dialog!</p>
+        <button id="close">Close</button>
+    </dialog>
+    <button id="show">Open Dialog!</button>
+    <script>
+        var dialog = document.querySelector('dialog');
+
+        document.querySelector('#show').onclick = function() {
+        dialog.show();
+        };
+
+        document.querySelector('#close').onclick = function() {
+        dialog.close();
+    };
+    for(var i=1;i<=3;i++){
+        setTimeout(function(){
+            console.log(i)
+        },0)
+    }
+    (function () {
+
+        console.log('1');
+
+        setTimeout(function cb() {
+            console.log('2');
+        });
+
+        console.log('3');
+
+        setTimeout(function cb1() {
+            console.log('4');
+        }, 0);
+
+        console.log('5');
+
+    })();
+    </script>
+</body>
+</html>

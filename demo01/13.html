@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            flex-flow:row wrap;
+            justify-content:flex-end; 
+            background: darkcyan;
+            color: #fff;
+            font-size: 24px;
+        }
+        .box div{
+            padding: 1em;
+        }
+        @media all and (max-width: 800px) {
+  .box {
+    /* 当在中等屏幕中, 导航项目居中显示，并且剩余空间平均分布在列表之间 */
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .box {
+    /* 在小屏幕下, 我们没有足够空间行排列，但我们可以换成列排列 */
+    flex-direction: column;
+  }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>111111</div>
+        <div>22222</div>
+        <div>33333</div>
+        <div>444444</div>
+        <div>55555</div>
+    </div>
+</body>
+</html>

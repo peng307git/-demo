@@ -8,8 +8,34 @@
 </head>
 <body>
     <script>
-        var a = 111;
-        console.log(a)
+            // var storage=window.localStorage;
+            // //写入a字段
+            // storage["a"]=1;
+            // //写入b字段
+            // storage.a=1;
+            // //写入c字段
+            // storage.setItem("c",3);
+            // console.log(typeof storage["a"]);
+            // console.log(typeof storage["b"]);
+            // console.log(typeof storage["c"]);
+
+            var storage=window.localStorage;
+            storage.setItem("a",11);
+            storage.setItem("b",22);
+            storage.setItem("c",333);
+            console.log(typeof storage["a"]);
+            console.log(typeof storage["b"]);
+            console.log(typeof storage["c"]);
+            //第一种方法读取
+            var a=storage.a;
+            console.log(a);
+            //第二种方法读取
+            var b=storage["b"];
+            console.log(b);
+            //第三种方法读取
+            var c=storage.getItem("c");
+            console.log(c);
+    
     </script>
 </body>
 </html>

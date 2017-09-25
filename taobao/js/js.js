@@ -19,16 +19,11 @@ window.onload = function () {
 
 		var iTop = tDiv.offsetTop;
 		window.onscroll = function () {
-
 			var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-
 			tDiv.style.top = iTop + scrollTop + 'px';
-
 		};
 		function da(obj, obj1) {
-
 			obj1.onclick = function () {
-
 				//obj.style.width = window.screen.width +'px';
 				//obj.style.height = window.screen.height +'px';
 				obj.style.width = document.body.clientWidth + 'px';
@@ -37,26 +32,20 @@ window.onload = function () {
 		}
 
 		function xiao(obj, obj1) {
-
 			obj1.onclick = function () {
-
 				obj.style.width = '350px';
 				obj.style.height = '400px';
 			}
 		}
 
 		function guanbi(obj, obj1) { //点击关闭
-
 			obj1.onclick = function () {
-
 				obj.style.display = 'none';
 			}
 		};
 
 		function denglu(obj, obj1) { //点击显示
-
 			obj1.onclick = function () {
-
 				obj.style.display = 'block';
 			}
 		};
